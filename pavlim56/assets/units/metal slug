@@ -1,0 +1,8 @@
+UNIT:
+NAME: Metal slug
+SYMBOL: @
+HEALTH: 30
+DAMAGE: 5
+SPEED: 2
+COST: 10
+DAMAGE_TYPE: fire

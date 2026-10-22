@@ -1,0 +1,130 @@
+\hypertarget{classCattacker}{}\doxysection{Cattacker Class Reference}
+\label{classCattacker}\index{Cattacker@{Cattacker}}
+
+
+Tile representing the unit attacker.  
+
+
+
+
+{\ttfamily \#include $<$attacker.\+hpp$>$}
+
+
+
+Inheritance diagram for Cattacker\+:
+% FIG 0
+
+
+Collaboration diagram for Cattacker\+:
+% FIG 1
+\doxysubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{classCattacker_a12eb31d8f444aa8a36bfc10bfcaf805b}\label{classCattacker_a12eb31d8f444aa8a36bfc10bfcaf805b}} 
+{\bfseries Cattacker} (char symbol, bool passable, int y, int x, string name, int HP, int damage, int speed, int cost, \mbox{\hyperlink{classCdamage__type}{Cdamage\+\_\+type}} resistance, \mbox{\hyperlink{classCdamage__type}{Cdamage\+\_\+type}} dmg\+\_\+type)
+\item 
+\mbox{\Hypertarget{classCattacker_ae727b3340d27756db4eedacb33cf542d}\label{classCattacker_ae727b3340d27756db4eedacb33cf542d}} 
+{\bfseries Cattacker} (const \mbox{\hyperlink{classCattacker}{Cattacker}} \&src)
+\item 
+void \mbox{\hyperlink{classCattacker_a8e240d023b03e9b8b14dfa7e3f72a24d}{find\+Path}} (weak\+\_\+ptr$<$ \mbox{\hyperlink{classCMapTiles}{CMap\+Tiles}} $>$ end\+\_\+tile)
+\begin{DoxyCompactList}\small\item\em Function for finding the shortest path to the exit using the A$\ast$ algorithm. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{classCattacker_a32b6e258cdbecd607fc28a0004f82550}{move\+\_\+foward}} (list$<$ shared\+\_\+ptr$<$ \mbox{\hyperlink{classCattacker}{Cattacker}} $>$$>$\+::iterator it)
+\begin{DoxyCompactList}\small\item\em Moves the attacker speed amount of tiles. \end{DoxyCompactList}\item 
+virtual list$<$ string $>$ \mbox{\hyperlink{classCattacker_a82cf62924024e3e1e26302bea7934460}{Save\+Unit\+Data}} (bool active)
+\begin{DoxyCompactList}\small\item\em Function to get a unit\textquotesingle{}s data to be saved. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{classCattacker_a0957bd2c8525c9222edacb5bad755e35}{attack\+\_\+enemy}} ()
+\begin{DoxyCompactList}\small\item\em function for attacking a tower \end{DoxyCompactList}\end{DoxyCompactItemize}
+\doxysubsection*{Public Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{classCattacker_aac40bdf6ef3b0e7c5129217f91e34705}\label{classCattacker_aac40bdf6ef3b0e7c5129217f91e34705}} 
+int {\bfseries c\+\_\+speed}
+\item 
+\mbox{\Hypertarget{classCattacker_a2cf7015ce2c1e2c5f26b6d3a5bc4ec6e}\label{classCattacker_a2cf7015ce2c1e2c5f26b6d3a5bc4ec6e}} 
+int {\bfseries c\+\_\+cost}
+\item 
+\mbox{\Hypertarget{classCattacker_a2ebc25ff4a484672ece9bbc401849792}\label{classCattacker_a2ebc25ff4a484672ece9bbc401849792}} 
+list$<$ weak\+\_\+ptr$<$ \mbox{\hyperlink{classCMapTiles}{CMap\+Tiles}} $>$ $>$ {\bfseries c\+\_\+path\+To\+Exit}
+\item 
+\mbox{\Hypertarget{classCattacker_a9dca128b42b2e619a0808d9d41a1486e}\label{classCattacker_a9dca128b42b2e619a0808d9d41a1486e}} 
+weak\+\_\+ptr$<$ \mbox{\hyperlink{classCMapTiles}{CMap\+Tiles}} $>$ {\bfseries c\+\_\+map\+Tile\+\_\+ptr}
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+Tile representing the unit attacker. 
+
+\doxysubsection{Member Function Documentation}
+\mbox{\Hypertarget{classCattacker_a0957bd2c8525c9222edacb5bad755e35}\label{classCattacker_a0957bd2c8525c9222edacb5bad755e35}} 
+\index{Cattacker@{Cattacker}!attack\_enemy@{attack\_enemy}}
+\index{attack\_enemy@{attack\_enemy}!Cattacker@{Cattacker}}
+\doxysubsubsection{\texorpdfstring{attack\_enemy()}{attack\_enemy()}}
+{\footnotesize\ttfamily void Cattacker\+::attack\+\_\+enemy (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+function for attacking a tower 
+
+Attacker attacks the tower and decreases it\textquotesingle{}s hp in accordance to it\textquotesingle{}s resistances and the attacker\textquotesingle{}s dmg. The target is the unit within\textquotesingle{}s it\textquotesingle{}s path \mbox{\Hypertarget{classCattacker_a8e240d023b03e9b8b14dfa7e3f72a24d}\label{classCattacker_a8e240d023b03e9b8b14dfa7e3f72a24d}} 
+\index{Cattacker@{Cattacker}!findPath@{findPath}}
+\index{findPath@{findPath}!Cattacker@{Cattacker}}
+\doxysubsubsection{\texorpdfstring{findPath()}{findPath()}}
+{\footnotesize\ttfamily void Cattacker\+::find\+Path (\begin{DoxyParamCaption}\item[{weak\+\_\+ptr$<$ \mbox{\hyperlink{classCMapTiles}{CMap\+Tiles}} $>$}]{end\+\_\+tile }\end{DoxyParamCaption})}
+
+
+
+Function for finding the shortest path to the exit using the A$\ast$ algorithm. 
+
+Function uses the A$\ast$ algorithm to determine the shortest path to the exit. Each tile is visited and given a distance value of how long it takes to get from said tile to the end. The tile\textquotesingle{}s distance is artificialy inflated if it has a tower on it. The algorithm returns the path from exit to unit so the function reverses it and marks each tile as being a path tile.
+
+
+\begin{DoxyParams}{Parameters}
+{\em end\+\_\+tile} & Tile to reach \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{classCattacker_a32b6e258cdbecd607fc28a0004f82550}\label{classCattacker_a32b6e258cdbecd607fc28a0004f82550}} 
+\index{Cattacker@{Cattacker}!move\_foward@{move\_foward}}
+\index{move\_foward@{move\_foward}!Cattacker@{Cattacker}}
+\doxysubsubsection{\texorpdfstring{move\_foward()}{move\_foward()}}
+{\footnotesize\ttfamily void Cattacker\+::move\+\_\+foward (\begin{DoxyParamCaption}\item[{list$<$ shared\+\_\+ptr$<$ \mbox{\hyperlink{classCattacker}{Cattacker}} $>$$>$\+::iterator}]{it }\end{DoxyParamCaption})}
+
+
+
+Moves the attacker speed amount of tiles. 
+
+Attempts to move attacker up to the amount of tiles it\textquotesingle{}s speed atribute allows it to. If must always end on a unoccupied tile. If it runs into a tower, it attacks it. If it runs into a another attacker and it is faster than it, it can pass this attacker.
+
+
+\begin{DoxyParams}{Parameters}
+{\em it} & iterator to the unit\textquotesingle{}s pointer within the container it is located in \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{classCattacker_a82cf62924024e3e1e26302bea7934460}\label{classCattacker_a82cf62924024e3e1e26302bea7934460}} 
+\index{Cattacker@{Cattacker}!SaveUnitData@{SaveUnitData}}
+\index{SaveUnitData@{SaveUnitData}!Cattacker@{Cattacker}}
+\doxysubsubsection{\texorpdfstring{SaveUnitData()}{SaveUnitData()}}
+{\footnotesize\ttfamily virtual list$<$string$>$ Cattacker\+::\+Save\+Unit\+Data (\begin{DoxyParamCaption}\item[{bool}]{active }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [virtual]}}
+
+
+
+Function to get a unit\textquotesingle{}s data to be saved. 
+
+Fucntion which outputs all the neccesary for unit to be later loaded into a list of strings.
+
+
+\begin{DoxyParams}{Parameters}
+{\em active} & boolean to determine whether the tile is active on the map or not \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+list$<$string$>$ Data of the attacker 
+\end{DoxyReturn}
+
+
+Implements \mbox{\hyperlink{classCUnit_a3c363a0841a929951557b26a90c5ca0f}{CUnit}}.
+
+
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+src/tiles/attackers/attacker.\+hpp\end{DoxyCompactItemize}

@@ -1,0 +1,88 @@
+\hypertarget{classCdamage__type}{}\doxysection{Cdamage\+\_\+type Class Reference}
+\label{classCdamage__type}\index{Cdamage\_type@{Cdamage\_type}}
+
+
+Class for managing damage types.  
+
+
+
+
+{\ttfamily \#include $<$atributes.\+hpp$>$}
+
+\doxysubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{classCdamage__type_a05e8d6655e8672bfe4bfac56887c450e}\label{classCdamage__type_a05e8d6655e8672bfe4bfac56887c450e}} 
+{\bfseries Cdamage\+\_\+type} (const \mbox{\hyperlink{classCdamage__type}{Cdamage\+\_\+type}} \&src)
+\item 
+\mbox{\Hypertarget{classCdamage__type_a2f6db210737922922b5b52923defe6d0}\label{classCdamage__type_a2f6db210737922922b5b52923defe6d0}} 
+\mbox{\hyperlink{classCdamage__type}{Cdamage\+\_\+type}} {\bfseries operator=} (const \mbox{\hyperlink{classCdamage__type}{Cdamage\+\_\+type}} \&src)
+\item 
+bool \mbox{\hyperlink{classCdamage__type_a18c7c0d9442d31ee69c0a6b6fd23d89c}{operator==}} (const \mbox{\hyperlink{classCdamage__type}{Cdamage\+\_\+type}} \&src)
+\begin{DoxyCompactList}\small\item\em Overload operator for ==. \end{DoxyCompactList}\item 
+bool \mbox{\hyperlink{classCdamage__type_a5913b8dc72405535055621ce6c67444b}{add\+Element}} (string new\+\_\+type)
+\begin{DoxyCompactList}\small\item\em Checks for existing names and adds them to the set. \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{classCdamage__type_aecd1dcb5e5f8eda3a167c22589f892ce}\label{classCdamage__type_aecd1dcb5e5f8eda3a167c22589f892ce}} 
+void \mbox{\hyperlink{classCdamage__type_aecd1dcb5e5f8eda3a167c22589f892ce}{clear\+Elements}} ()
+\begin{DoxyCompactList}\small\item\em Clears the container with names. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\doxysubsection*{Public Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{classCdamage__type_a897a5cdb7a12ace2a3715f70f989844d}\label{classCdamage__type_a897a5cdb7a12ace2a3715f70f989844d}} 
+set$<$ string $>$ {\bfseries c\+\_\+names}
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+Class for managing damage types. 
+
+\doxysubsection{Member Function Documentation}
+\mbox{\Hypertarget{classCdamage__type_a5913b8dc72405535055621ce6c67444b}\label{classCdamage__type_a5913b8dc72405535055621ce6c67444b}} 
+\index{Cdamage\_type@{Cdamage\_type}!addElement@{addElement}}
+\index{addElement@{addElement}!Cdamage\_type@{Cdamage\_type}}
+\doxysubsubsection{\texorpdfstring{addElement()}{addElement()}}
+{\footnotesize\ttfamily bool Cdamage\+\_\+type\+::add\+Element (\begin{DoxyParamCaption}\item[{string}]{new\+\_\+type }\end{DoxyParamCaption})}
+
+
+
+Checks for existing names and adds them to the set. 
+
+Checks if the new element is not present and adds it to the container.
+
+
+\begin{DoxyParams}{Parameters}
+{\em new\+\_\+type} & New name to be added \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+true Added 
+
+false already present 
+\end{DoxyReturn}
+\mbox{\Hypertarget{classCdamage__type_a18c7c0d9442d31ee69c0a6b6fd23d89c}\label{classCdamage__type_a18c7c0d9442d31ee69c0a6b6fd23d89c}} 
+\index{Cdamage\_type@{Cdamage\_type}!operator==@{operator==}}
+\index{operator==@{operator==}!Cdamage\_type@{Cdamage\_type}}
+\doxysubsubsection{\texorpdfstring{operator==()}{operator==()}}
+{\footnotesize\ttfamily bool Cdamage\+\_\+type\+::operator== (\begin{DoxyParamCaption}\item[{const \mbox{\hyperlink{classCdamage__type}{Cdamage\+\_\+type}} \&}]{src }\end{DoxyParamCaption})}
+
+
+
+Overload operator for ==. 
+
+Checks whether if one of the names within each of the container matches the other. If one match is found, they equel
+
+
+\begin{DoxyParams}{Parameters}
+{\em src} & Source file \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+true Found match 
+
+false didn\textquotesingle{}t find match 
+\end{DoxyReturn}
+
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+src/tiles/atributes.\+hpp\end{DoxyCompactItemize}

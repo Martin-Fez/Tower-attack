@@ -1,0 +1,128 @@
+\hypertarget{classCtower}{}\doxysection{Ctower Class Reference}
+\label{classCtower}\index{Ctower@{Ctower}}
+
+
+parent class for all tower types  
+
+
+
+
+{\ttfamily \#include $<$Tower.\+hpp$>$}
+
+
+
+Inheritance diagram for Ctower\+:
+% FIG 0
+
+
+Collaboration diagram for Ctower\+:
+% FIG 1
+\doxysubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{classCtower_a45d85d452beaf4764818cf7674661224}{Ctower}} (char symbol, bool passable, int y, int x, string name, int HP, int damage, \mbox{\hyperlink{classCdamage__type}{Cdamage\+\_\+type}} resistance, \mbox{\hyperlink{classCdamage__type}{Cdamage\+\_\+type}} dmg\+\_\+type, int cooldown, int timer, string type, int reach)
+\begin{DoxyCompactList}\small\item\em Construct a new \mbox{\hyperlink{classCtower}{Ctower}} object. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{classCtower_a27b74bbbc74c8175173952d04c629268}{Ctower}} (const \mbox{\hyperlink{classCtower}{Ctower}} \&src)
+\begin{DoxyCompactList}\small\item\em Construct a new \mbox{\hyperlink{classCtower}{Ctower}} object. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{classCtower_a998bc0b93c6ffe1b91ab3d336df87e10}{get\+\_\+reachable\+\_\+tiles}} ()
+\begin{DoxyCompactList}\small\item\em Gets all reachable tiles. \end{DoxyCompactList}\item 
+virtual list$<$ string $>$ \mbox{\hyperlink{classCtower_a090acb1aa1ddbc4fb685cc6bcd4f6429}{Save\+Unit\+Data}} (bool active)
+\begin{DoxyCompactList}\small\item\em outputs tower\textquotesingle{}s data to save \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{classCtower_ac587f9f63b3f6389f11d527dbef695d3}\label{classCtower_ac587f9f63b3f6389f11d527dbef695d3}} 
+virtual void \mbox{\hyperlink{classCtower_ac587f9f63b3f6389f11d527dbef695d3}{attack\+\_\+enemy}} ()=0
+\begin{DoxyCompactList}\small\item\em Pure virtual function for attacking attackers. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\doxysubsection*{Public Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{classCtower_a7feb603634a544c3e2c650e7dc249d05}\label{classCtower_a7feb603634a544c3e2c650e7dc249d05}} 
+vector$<$ weak\+\_\+ptr$<$ \mbox{\hyperlink{classCMapTiles}{CMap\+Tiles}} $>$ $>$ {\bfseries c\+\_\+reach\+Vector}
+\item 
+\mbox{\Hypertarget{classCtower_accd9fbbd6e42408ae86df0369fdb2f6d}\label{classCtower_accd9fbbd6e42408ae86df0369fdb2f6d}} 
+weak\+\_\+ptr$<$ \mbox{\hyperlink{classCMapTiles}{CMap\+Tiles}} $>$ {\bfseries c\+\_\+map\+Tile\+\_\+ptr}
+\item 
+\mbox{\Hypertarget{classCtower_ab50c54bf815602124d9f65b30139f59f}\label{classCtower_ab50c54bf815602124d9f65b30139f59f}} 
+int {\bfseries c\+\_\+cooldown}
+\item 
+\mbox{\Hypertarget{classCtower_adc6ea2f711b44078d0fcd151cf870488}\label{classCtower_adc6ea2f711b44078d0fcd151cf870488}} 
+int {\bfseries c\+\_\+score\+\_\+worth}
+\item 
+\mbox{\Hypertarget{classCtower_a63f5c0715329f6482934ffdcdd8d4cfd}\label{classCtower_a63f5c0715329f6482934ffdcdd8d4cfd}} 
+int {\bfseries c\+\_\+money\+\_\+worth}
+\item 
+\mbox{\Hypertarget{classCtower_a2340a7195879ed45ff7c7bd3efd90f53}\label{classCtower_a2340a7195879ed45ff7c7bd3efd90f53}} 
+int {\bfseries c\+\_\+timer}
+\item 
+\mbox{\Hypertarget{classCtower_ac9ff670935ab018f9a4786deed150a58}\label{classCtower_ac9ff670935ab018f9a4786deed150a58}} 
+string {\bfseries c\+\_\+type}
+\item 
+\mbox{\Hypertarget{classCtower_afa760d8a7e5c4c42bfef3bb81c6ec0b8}\label{classCtower_afa760d8a7e5c4c42bfef3bb81c6ec0b8}} 
+int {\bfseries c\+\_\+reach}
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+parent class for all tower types 
+
+\doxysubsection{Constructor \& Destructor Documentation}
+\mbox{\Hypertarget{classCtower_a45d85d452beaf4764818cf7674661224}\label{classCtower_a45d85d452beaf4764818cf7674661224}} 
+\index{Ctower@{Ctower}!Ctower@{Ctower}}
+\index{Ctower@{Ctower}!Ctower@{Ctower}}
+\doxysubsubsection{\texorpdfstring{Ctower()}{Ctower()}\hspace{0.1cm}{\footnotesize\ttfamily [1/2]}}
+{\footnotesize\ttfamily Ctower\+::\+Ctower (\begin{DoxyParamCaption}\item[{char}]{symbol,  }\item[{bool}]{passable,  }\item[{int}]{y,  }\item[{int}]{x,  }\item[{string}]{name,  }\item[{int}]{HP,  }\item[{int}]{damage,  }\item[{\mbox{\hyperlink{classCdamage__type}{Cdamage\+\_\+type}}}]{resistance,  }\item[{\mbox{\hyperlink{classCdamage__type}{Cdamage\+\_\+type}}}]{dmg\+\_\+type,  }\item[{int}]{cooldown,  }\item[{int}]{timer,  }\item[{string}]{type,  }\item[{int}]{reach }\end{DoxyParamCaption})}
+
+
+
+Construct a new \mbox{\hyperlink{classCtower}{Ctower}} object. 
+
+determines c\+\_\+money\+\_\+worth and c\+\_\+score\+\_\+worth though the value of the tower\textquotesingle{}s health. \mbox{\Hypertarget{classCtower_a27b74bbbc74c8175173952d04c629268}\label{classCtower_a27b74bbbc74c8175173952d04c629268}} 
+\index{Ctower@{Ctower}!Ctower@{Ctower}}
+\index{Ctower@{Ctower}!Ctower@{Ctower}}
+\doxysubsubsection{\texorpdfstring{Ctower()}{Ctower()}\hspace{0.1cm}{\footnotesize\ttfamily [2/2]}}
+{\footnotesize\ttfamily Ctower\+::\+Ctower (\begin{DoxyParamCaption}\item[{const \mbox{\hyperlink{classCtower}{Ctower}} \&}]{src }\end{DoxyParamCaption})}
+
+
+
+Construct a new \mbox{\hyperlink{classCtower}{Ctower}} object. 
+
+determines c\+\_\+money\+\_\+worth and c\+\_\+score\+\_\+worth though the value of the tower\textquotesingle{}s health. 
+
+\doxysubsection{Member Function Documentation}
+\mbox{\Hypertarget{classCtower_a998bc0b93c6ffe1b91ab3d336df87e10}\label{classCtower_a998bc0b93c6ffe1b91ab3d336df87e10}} 
+\index{Ctower@{Ctower}!get\_reachable\_tiles@{get\_reachable\_tiles}}
+\index{get\_reachable\_tiles@{get\_reachable\_tiles}!Ctower@{Ctower}}
+\doxysubsubsection{\texorpdfstring{get\_reachable\_tiles()}{get\_reachable\_tiles()}}
+{\footnotesize\ttfamily void Ctower\+::get\+\_\+reachable\+\_\+tiles (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Gets all reachable tiles. 
+
+Function goes though it\textquotesingle{}s neighbours and their neighbours and adds them to the c\+\_\+reach\+Vector if those tiles are still within the tower\textquotesingle{}s reach. \mbox{\Hypertarget{classCtower_a090acb1aa1ddbc4fb685cc6bcd4f6429}\label{classCtower_a090acb1aa1ddbc4fb685cc6bcd4f6429}} 
+\index{Ctower@{Ctower}!SaveUnitData@{SaveUnitData}}
+\index{SaveUnitData@{SaveUnitData}!Ctower@{Ctower}}
+\doxysubsubsection{\texorpdfstring{SaveUnitData()}{SaveUnitData()}}
+{\footnotesize\ttfamily virtual list$<$string$>$ Ctower\+::\+Save\+Unit\+Data (\begin{DoxyParamCaption}\item[{bool}]{active }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [virtual]}}
+
+
+
+outputs tower\textquotesingle{}s data to save 
+
+Outputs all tower\textquotesingle{}s data necessary to load it up later.
+
+
+\begin{DoxyParams}{Parameters}
+{\em active} & Tower is active within the map \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+list$<$string$>$ Outputed data of the tower 
+\end{DoxyReturn}
+
+
+Implements \mbox{\hyperlink{classCUnit_a3c363a0841a929951557b26a90c5ca0f}{CUnit}}.
+
+
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+src/tiles/towers/Tower.\+hpp\end{DoxyCompactItemize}

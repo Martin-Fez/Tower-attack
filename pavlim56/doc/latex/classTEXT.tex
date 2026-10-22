@@ -1,0 +1,88 @@
+\hypertarget{classTEXT}{}\doxysection{TEXT Class Reference}
+\label{classTEXT}\index{TEXT@{TEXT}}
+\doxysubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+void \mbox{\hyperlink{classTEXT_a78c4d53fa8bc41edb330c129760306bc}{print\+Options}} (const int dialogue)
+\begin{DoxyCompactList}\small\item\em prints avaiable options \end{DoxyCompactList}\item 
+int \mbox{\hyperlink{classTEXT_a6fc7d8dcdd3bb48bbbacadb359c9bd99}{get\+Choice}} (const int num\+Of\+Options)
+\begin{DoxyCompactList}\small\item\em function for reading player\textquotesingle{}s numerical input \end{DoxyCompactList}\item 
+string \mbox{\hyperlink{classTEXT_abcb77b4177f7289e1a6f7f621c10f389}{get\+Name}} ()
+\begin{DoxyCompactList}\small\item\em function for reading any string input \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{classTEXT_a54af3628d3312c3a10e08b4b6fd7b577}{change\+Format}} (string \&buffer)
+\begin{DoxyCompactList}\small\item\em function for checking format of inputed string \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\doxysubsection{Member Function Documentation}
+\mbox{\Hypertarget{classTEXT_a54af3628d3312c3a10e08b4b6fd7b577}\label{classTEXT_a54af3628d3312c3a10e08b4b6fd7b577}} 
+\index{TEXT@{TEXT}!changeFormat@{changeFormat}}
+\index{changeFormat@{changeFormat}!TEXT@{TEXT}}
+\doxysubsubsection{\texorpdfstring{changeFormat()}{changeFormat()}}
+{\footnotesize\ttfamily void TEXT\+::change\+Format (\begin{DoxyParamCaption}\item[{string \&}]{buffer }\end{DoxyParamCaption})}
+
+
+
+function for checking format of inputed string 
+
+Function cuts down blank spaces before first character and returns an empty string if nothing but blank is inputed
+
+
+\begin{DoxyParams}{Parameters}
+{\em buffer} & \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{classTEXT_a6fc7d8dcdd3bb48bbbacadb359c9bd99}\label{classTEXT_a6fc7d8dcdd3bb48bbbacadb359c9bd99}} 
+\index{TEXT@{TEXT}!getChoice@{getChoice}}
+\index{getChoice@{getChoice}!TEXT@{TEXT}}
+\doxysubsubsection{\texorpdfstring{getChoice()}{getChoice()}}
+{\footnotesize\ttfamily int TEXT\+::get\+Choice (\begin{DoxyParamCaption}\item[{const int}]{num\+Of\+Options }\end{DoxyParamCaption})}
+
+
+
+function for reading player\textquotesingle{}s numerical input 
+
+Reads input a checks that an a input is a number and checks if it is within the allowed interval of 0 -\/ num\+Of\+Options The function keeps asking for a number till a valid one is given
+
+
+\begin{DoxyParams}{Parameters}
+{\em num\+Of\+Options} & maximum allowed number \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+int inputed number 
+\end{DoxyReturn}
+\mbox{\Hypertarget{classTEXT_abcb77b4177f7289e1a6f7f621c10f389}\label{classTEXT_abcb77b4177f7289e1a6f7f621c10f389}} 
+\index{TEXT@{TEXT}!getName@{getName}}
+\index{getName@{getName}!TEXT@{TEXT}}
+\doxysubsubsection{\texorpdfstring{getName()}{getName()}}
+{\footnotesize\ttfamily string TEXT\+::get\+Name (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+function for reading any string input 
+
+Function reads any string input up to 100 characters long
+
+\begin{DoxyReturn}{Returns}
+string read string from input 
+\end{DoxyReturn}
+\mbox{\Hypertarget{classTEXT_a78c4d53fa8bc41edb330c129760306bc}\label{classTEXT_a78c4d53fa8bc41edb330c129760306bc}} 
+\index{TEXT@{TEXT}!printOptions@{printOptions}}
+\index{printOptions@{printOptions}!TEXT@{TEXT}}
+\doxysubsubsection{\texorpdfstring{printOptions()}{printOptions()}}
+{\footnotesize\ttfamily void TEXT\+::print\+Options (\begin{DoxyParamCaption}\item[{const int}]{dialogue }\end{DoxyParamCaption})}
+
+
+
+prints avaiable options 
+
+
+\begin{DoxyParams}{Parameters}
+{\em dialogue} & enum of dialogue we want to use \\
+\hline
+\end{DoxyParams}
+
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+src/extra\+\_\+func/dialogue\+Func.\+hpp\end{DoxyCompactItemize}

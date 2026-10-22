@@ -1,0 +1,362 @@
+TOWER:
+NAME: DoomPillar
+SYMBOL: Y
+HEALTH: 50
+DAMAGE: 50
+COOLDOWN: 50
+TIMER: 35
+TYPE: ST
+DISTANCE: 5
+RESISTANCE: fire
+RESISTANCE: ice
+DAMAGE_TYPE: water
+ 
+TOWER:
+NAME: Obelisk
+SYMBOL: I
+HEALTH: 10
+DAMAGE: 3
+COOLDOWN: 2
+TIMER: 2
+TYPE: ST
+DISTANCE: 2
+RESISTANCE: fire
+RESISTANCE: ice
+DAMAGE_TYPE: water
+ 
+TOWER:
+NAME: StrawWall
+SYMBOL: W
+HEALTH: 30
+DAMAGE: 1
+COOLDOWN: 2
+TIMER: 2
+TYPE: BLOCK
+DISTANCE: 0
+RESISTANCE: fire
+ 
+TOWER:
+NAME: WaterHose
+SYMBOL: T
+HEALTH: 20
+DAMAGE: 1
+COOLDOWN: 4
+TIMER: 2
+TYPE: AOE
+DISTANCE: 1
+RESISTANCE: fire
+RESISTANCE: ice
+DAMAGE_TYPE: water
+ 
+END_OF_TOWERS
+ 
+UNIT:
+NAME: Mantis
+SYMBOL: Z
+HEALTH: 10
+DAMAGE: 2
+COST: 2
+SPEED: 5
+RESISTANCE: fire
+DAMAGE_TYPE: water
+ 
+UNIT:
+NAME: Metal slug
+SYMBOL: @
+HEALTH: 30
+DAMAGE: 5
+COST: 10
+SPEED: 2
+DAMAGE_TYPE: fire
+ 
+UNIT:
+NAME: Mr X
+SYMBOL: x
+HEALTH: 150
+DAMAGE: 5000
+COST: 100
+SPEED: 5
+RESISTANCE: fire
+RESISTANCE: water
+DAMAGE_TYPE: fire
+DAMAGE_TYPE: water
+ 
+END_OF_UNITS
+STATUS:
+HEALTH: 34
+MAX_ROUNDS: 200
+MONEY: 130
+INCOME: 10
+                                                  
+################################################# 
+#                        #           #         <=3
+#         #              #           ###        # 
+#         #              #     #       #        # 
+<=        #                    #       #       <=1
+#         #                    #                # 
+#                              #                # 
+#                              #               <=2
+################################################# 
+                                                  
+                                                  
+                                                  
+END_OF_MAP
+ROUND: 16
+SCORE: 160
+ACTIVE_TOWER:
+NAME: Obelisk
+SYMBOL: I
+HEALTH: 10
+DAMAGE: 3
+COOLDOWN: 2
+TIMER: 0
+TYPE: ST
+DISTANCE: 3
+RESISTANCE: fire
+RESISTANCE: ice
+DAMAGE_TYPE: water
+X: 28
+Y: 2
+ 
+ACTIVE_TOWER:
+NAME: StrawWall
+SYMBOL: W
+HEALTH: 30
+DAMAGE: 1
+COOLDOWN: 2
+TIMER: 0
+TYPE: BLOCK
+DISTANCE: 3
+RESISTANCE: fire
+X: 10
+Y: 2
+ 
+ACTIVE_TOWER:
+NAME: WaterHose
+SYMBOL: T
+HEALTH: 20
+DAMAGE: 1
+COOLDOWN: 4
+TIMER: 0
+TYPE: AOE
+DISTANCE: 3
+RESISTANCE: fire
+RESISTANCE: ice
+DAMAGE_TYPE: water
+X: 43
+Y: 4
+ 
+ACTIVE_TOWER:
+NAME: Obelisk
+SYMBOL: I
+HEALTH: 10
+DAMAGE: 3
+COOLDOWN: 2
+TIMER: 0
+TYPE: ST
+DISTANCE: 3
+RESISTANCE: fire
+RESISTANCE: ice
+DAMAGE_TYPE: water
+X: 16
+Y: 4
+ 
+ACTIVE_TOWER:
+NAME: StrawWall
+SYMBOL: W
+HEALTH: 30
+DAMAGE: 1
+COOLDOWN: 2
+TIMER: 0
+TYPE: BLOCK
+DISTANCE: 3
+RESISTANCE: fire
+X: 31
+Y: 3
+ 
+ACTIVE_TOWER:
+NAME: Obelisk
+SYMBOL: I
+HEALTH: 10
+DAMAGE: 3
+COOLDOWN: 2
+TIMER: 0
+TYPE: ST
+DISTANCE: 3
+RESISTANCE: fire
+RESISTANCE: ice
+DAMAGE_TYPE: water
+X: 35
+Y: 5
+ 
+ACTIVE_TOWER:
+NAME: Obelisk
+SYMBOL: I
+HEALTH: 10
+DAMAGE: 3
+COOLDOWN: 2
+TIMER: 0
+TYPE: ST
+DISTANCE: 3
+RESISTANCE: fire
+RESISTANCE: ice
+DAMAGE_TYPE: water
+X: 22
+Y: 4
+ 
+ACTIVE_TOWER:
+NAME: StrawWall
+SYMBOL: W
+HEALTH: 30
+DAMAGE: 1
+COOLDOWN: 2
+TIMER: 0
+TYPE: BLOCK
+DISTANCE: 3
+RESISTANCE: fire
+X: 10
+Y: 7
+ 
+ACTIVE_TOWER:
+NAME: WaterHose
+SYMBOL: T
+HEALTH: 20
+DAMAGE: 1
+COOLDOWN: 4
+TIMER: 0
+TYPE: AOE
+DISTANCE: 3
+RESISTANCE: fire
+RESISTANCE: ice
+DAMAGE_TYPE: water
+X: 25
+Y: 6
+ 
+ACTIVE_TOWER:
+NAME: Obelisk
+SYMBOL: I
+HEALTH: 10
+DAMAGE: 3
+COOLDOWN: 2
+TIMER: 0
+TYPE: ST
+DISTANCE: 3
+RESISTANCE: fire
+RESISTANCE: ice
+DAMAGE_TYPE: water
+X: 5
+Y: 7
+ 
+ACTIVE_TOWER:
+NAME: StrawWall
+SYMBOL: W
+HEALTH: 30
+DAMAGE: 1
+COOLDOWN: 2
+TIMER: 0
+TYPE: BLOCK
+DISTANCE: 3
+RESISTANCE: fire
+X: 39
+Y: 2
+ 
+ACTIVE_TOWER:
+NAME: Obelisk
+SYMBOL: I
+HEALTH: 10
+DAMAGE: 3
+COOLDOWN: 2
+TIMER: 0
+TYPE: ST
+DISTANCE: 3
+RESISTANCE: fire
+RESISTANCE: ice
+DAMAGE_TYPE: water
+X: 6
+Y: 7
+ 
+ACTIVE_TOWER:
+NAME: StrawWall
+SYMBOL: W
+HEALTH: 30
+DAMAGE: 1
+COOLDOWN: 2
+TIMER: 0
+TYPE: BLOCK
+DISTANCE: 3
+RESISTANCE: fire
+X: 47
+Y: 3
+ 
+ACTIVE_TOWER:
+NAME: WaterHose
+SYMBOL: T
+HEALTH: 20
+DAMAGE: 1
+COOLDOWN: 4
+TIMER: 0
+TYPE: AOE
+DISTANCE: 3
+RESISTANCE: fire
+RESISTANCE: ice
+DAMAGE_TYPE: water
+X: 7
+Y: 7
+ 
+ACTIVE_TOWER:
+NAME: Obelisk
+SYMBOL: I
+HEALTH: 10
+DAMAGE: 3
+COOLDOWN: 2
+TIMER: 0
+TYPE: ST
+DISTANCE: 3
+RESISTANCE: fire
+RESISTANCE: ice
+DAMAGE_TYPE: water
+X: 14
+Y: 7
+ 
+ACTIVE_TOWER:
+NAME: Obelisk
+SYMBOL: I
+HEALTH: 10
+DAMAGE: 3
+COOLDOWN: 2
+TIMER: 0
+TYPE: ST
+DISTANCE: 3
+RESISTANCE: fire
+RESISTANCE: ice
+DAMAGE_TYPE: water
+X: 13
+Y: 7
+ 
+ACTIVE_TOWER:
+NAME: StrawWall
+SYMBOL: W
+HEALTH: 30
+DAMAGE: 1
+COOLDOWN: 2
+TIMER: 0
+TYPE: BLOCK
+DISTANCE: 3
+RESISTANCE: fire
+X: 47
+Y: 7
+ 
+ACTIVE_UNIT:
+NAME: Mr X
+SYMBOL: x
+HEALTH: 147
+DAMAGE: 5000
+COST: 100
+SPEED: 5
+RESISTANCE: fire
+RESISTANCE: water
+DAMAGE_TYPE: fire
+DAMAGE_TYPE: water
+X: 22
+Y: 5
+ 

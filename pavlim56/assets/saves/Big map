@@ -1,0 +1,120 @@
+TOWER:
+NAME: DoomPillar
+SYMBOL: Y
+HEALTH: 50
+DAMAGE: 50
+COOLDOWN: 50
+TIMER: 50
+TYPE: ST
+DISTANCE: 5
+RESISTANCE: fire
+RESISTANCE: ice
+DAMAGE_TYPE: water
+ 
+TOWER:
+NAME: Obelisk
+SYMBOL: I
+HEALTH: 10
+DAMAGE: 3
+COOLDOWN: 2
+TIMER: 1
+TYPE: ST
+DISTANCE: 2
+RESISTANCE: fire
+RESISTANCE: ice
+DAMAGE_TYPE: water
+ 
+TOWER:
+NAME: StrawWall
+SYMBOL: W
+HEALTH: 30
+DAMAGE: 1
+COOLDOWN: 2
+TIMER: 1
+TYPE: BLOCK
+DISTANCE: 0
+RESISTANCE: fire
+ 
+TOWER:
+NAME: WaterHose
+SYMBOL: T
+HEALTH: 20
+DAMAGE: 1
+COOLDOWN: 4
+TIMER: 1
+TYPE: AOE
+DISTANCE: 1
+RESISTANCE: fire
+RESISTANCE: ice
+DAMAGE_TYPE: water
+ 
+END_OF_TOWERS
+ 
+UNIT:
+NAME: Mantis
+SYMBOL: Z
+HEALTH: 10
+DAMAGE: 2
+COST: 2
+SPEED: 5
+RESISTANCE: fire
+DAMAGE_TYPE: water
+ 
+UNIT:
+NAME: Metal slug
+SYMBOL: @
+HEALTH: 30
+DAMAGE: 5
+COST: 10
+SPEED: 2
+DAMAGE_TYPE: fire
+ 
+UNIT:
+NAME: Mr X
+SYMBOL: x
+HEALTH: 150
+DAMAGE: 5000
+COST: 100
+SPEED: 5
+RESISTANCE: fire
+RESISTANCE: water
+DAMAGE_TYPE: fire
+DAMAGE_TYPE: water
+ 
+END_OF_UNITS
+STATUS:
+HEALTH: 500
+MAX_ROUNDS: 2000
+MONEY: 100
+INCOME: 20
+                                                     
+                                                     
+#####################################################
+<=     #                                            #
+#      #                            #               #
+#      #                            #               #
+#      #                            #               #
+#      #                            #               #
+#                                                   #
+#############################################       #
+                                            #       #
+                                            #       #
+                                            #       #
+                                            #       #
+                                            #       #
+                                            #       #
+                                            #       #
+                                            ####    #
+                                            #       #
+#############################################       #
+#                                                   #
+#                                                   #
+#     #####################   #######################
+#    <=2                  #    <=1                   
+########                  ########                   
+                                                     
+                                                     
+                                                     
+END_OF_MAP
+ROUND: 1
+SCORE: 0

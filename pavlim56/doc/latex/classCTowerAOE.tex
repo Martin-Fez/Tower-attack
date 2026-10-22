@@ -1,0 +1,56 @@
+\hypertarget{classCTowerAOE}{}\doxysection{CTower\+AOE Class Reference}
+\label{classCTowerAOE}\index{CTowerAOE@{CTowerAOE}}
+
+
+Tile for towers that deal damage in area of effect.  
+
+
+
+
+{\ttfamily \#include $<$Tower\+AOE.\+hpp$>$}
+
+
+
+Inheritance diagram for CTower\+AOE\+:
+% FIG 0
+
+
+Collaboration diagram for CTower\+AOE\+:
+% FIG 1
+\doxysubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{classCTowerAOE_ad1d07735d9444b29cf510abc686f6806}\label{classCTowerAOE_ad1d07735d9444b29cf510abc686f6806}} 
+{\bfseries CTower\+AOE} (char symbol, bool passable, int y, int x, string name, int HP, int damage, \mbox{\hyperlink{classCdamage__type}{Cdamage\+\_\+type}} resistance, \mbox{\hyperlink{classCdamage__type}{Cdamage\+\_\+type}} dmg\+\_\+type, int cooldown, int timer, string type, int reach)
+\item 
+\mbox{\Hypertarget{classCTowerAOE_a5bf10716eb64804894cb3b76f468e69a}\label{classCTowerAOE_a5bf10716eb64804894cb3b76f468e69a}} 
+{\bfseries CTower\+AOE} (const \mbox{\hyperlink{classCtower}{Ctower}} \&src)
+\item 
+void \mbox{\hyperlink{classCTowerAOE_a45e667f912f74f09b8dc003ceb776e02}{attack\+\_\+enemy}} ()
+\begin{DoxyCompactList}\small\item\em attacks attackers \end{DoxyCompactList}\end{DoxyCompactItemize}
+\doxysubsection*{Additional Inherited Members}
+
+
+\doxysubsection{Detailed Description}
+Tile for towers that deal damage in area of effect. 
+
+\doxysubsection{Member Function Documentation}
+\mbox{\Hypertarget{classCTowerAOE_a45e667f912f74f09b8dc003ceb776e02}\label{classCTowerAOE_a45e667f912f74f09b8dc003ceb776e02}} 
+\index{CTowerAOE@{CTowerAOE}!attack\_enemy@{attack\_enemy}}
+\index{attack\_enemy@{attack\_enemy}!CTowerAOE@{CTowerAOE}}
+\doxysubsubsection{\texorpdfstring{attack\_enemy()}{attack\_enemy()}}
+{\footnotesize\ttfamily void CTower\+AOE\+::attack\+\_\+enemy (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [virtual]}}
+
+
+
+attacks attackers 
+
+Attacks all all attackers within it\textquotesingle{}s immediate distance. HP of attackers is reduced by the amount of dmg AOE tower has and whether they resitant or not 
+
+Implements \mbox{\hyperlink{classCtower_ac587f9f63b3f6389f11d527dbef695d3}{Ctower}}.
+
+
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+src/tiles/towers/Tower\+AOE.\+hpp\end{DoxyCompactItemize}

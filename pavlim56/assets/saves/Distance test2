@@ -1,0 +1,214 @@
+TOWER:
+NAME: DoomPillar
+SYMBOL: Y
+HEALTH: 50
+DAMAGE: 50
+COOLDOWN: 50
+TIMER: 45
+TYPE: ST
+DISTANCE: 5
+RESISTANCE: fire
+RESISTANCE: ice
+DAMAGE_TYPE: water
+ 
+TOWER:
+NAME: Obelisk
+SYMBOL: I
+HEALTH: 10
+DAMAGE: 3
+COOLDOWN: 2
+TIMER: 2
+TYPE: ST
+DISTANCE: 2
+RESISTANCE: fire
+RESISTANCE: ice
+DAMAGE_TYPE: water
+ 
+TOWER:
+NAME: StrawWall
+SYMBOL: W
+HEALTH: 30
+DAMAGE: 1
+COOLDOWN: 2
+TIMER: 1
+TYPE: BLOCK
+DISTANCE: 0
+RESISTANCE: fire
+ 
+TOWER:
+NAME: WaterHose
+SYMBOL: T
+HEALTH: 20
+DAMAGE: 1
+COOLDOWN: 4
+TIMER: 1
+TYPE: AOE
+DISTANCE: 1
+RESISTANCE: fire
+RESISTANCE: ice
+DAMAGE_TYPE: water
+ 
+END_OF_TOWERS
+ 
+UNIT:
+NAME: Mantis
+SYMBOL: Z
+HEALTH: 10
+DAMAGE: 2
+COST: 2
+SPEED: 5
+RESISTANCE: fire
+DAMAGE_TYPE: water
+ 
+UNIT:
+NAME: Metal slug
+SYMBOL: @
+HEALTH: 30
+DAMAGE: 5
+COST: 10
+SPEED: 2
+DAMAGE_TYPE: fire
+ 
+END_OF_UNITS
+STATUS:
+HEALTH: 50
+MAX_ROUNDS: 200
+MONEY: 60
+INCOME: 10
+                                                  
+################################################# 
+#                        #           #         <=3
+#         #              #           ###        # 
+#         #              #     #       #        # 
+<=        #                    #       #       <=1
+#         #                    #                # 
+#                              #                # 
+#                              #               <=2
+################################################# 
+                                                  
+                                                  
+                                                  
+END_OF_MAP
+ROUND: 6
+SCORE: 40
+ACTIVE_TOWER:
+NAME: Obelisk
+SYMBOL: I
+HEALTH: 10
+DAMAGE: 3
+COOLDOWN: 2
+TIMER: 0
+TYPE: ST
+DISTANCE: 3
+RESISTANCE: fire
+RESISTANCE: ice
+DAMAGE_TYPE: water
+X: 14
+Y: 7
+ 
+ACTIVE_TOWER:
+NAME: StrawWall
+SYMBOL: W
+HEALTH: 30
+DAMAGE: 1
+COOLDOWN: 2
+TIMER: 0
+TYPE: BLOCK
+DISTANCE: 3
+RESISTANCE: fire
+X: 10
+Y: 2
+ 
+ACTIVE_TOWER:
+NAME: WaterHose
+SYMBOL: T
+HEALTH: 20
+DAMAGE: 1
+COOLDOWN: 4
+TIMER: 0
+TYPE: AOE
+DISTANCE: 3
+RESISTANCE: fire
+RESISTANCE: ice
+DAMAGE_TYPE: water
+X: 12
+Y: 6
+ 
+ACTIVE_TOWER:
+NAME: Obelisk
+SYMBOL: I
+HEALTH: 10
+DAMAGE: 3
+COOLDOWN: 2
+TIMER: 0
+TYPE: ST
+DISTANCE: 3
+RESISTANCE: fire
+RESISTANCE: ice
+DAMAGE_TYPE: water
+X: 37
+Y: 7
+ 
+ACTIVE_TOWER:
+NAME: StrawWall
+SYMBOL: W
+HEALTH: 26
+DAMAGE: 1
+COOLDOWN: 2
+TIMER: 0
+TYPE: BLOCK
+DISTANCE: 3
+RESISTANCE: fire
+X: 31
+Y: 3
+ 
+ACTIVE_TOWER:
+NAME: Obelisk
+SYMBOL: I
+HEALTH: 10
+DAMAGE: 3
+COOLDOWN: 2
+TIMER: 0
+TYPE: ST
+DISTANCE: 3
+RESISTANCE: fire
+RESISTANCE: ice
+DAMAGE_TYPE: water
+X: 43
+Y: 6
+ 
+ACTIVE_UNIT:
+NAME: Mantis
+SYMBOL: Z
+HEALTH: 7
+DAMAGE: 2
+COST: 2
+SPEED: 5
+RESISTANCE: fire
+DAMAGE_TYPE: water
+X: 32
+Y: 4
+ 
+ACTIVE_UNIT:
+NAME: Metal slug
+SYMBOL: @
+HEALTH: 27
+DAMAGE: 5
+COST: 10
+SPEED: 2
+DAMAGE_TYPE: fire
+X: 37
+Y: 8
+ 
+ACTIVE_UNIT:
+NAME: Mantis
+SYMBOL: Z
+HEALTH: 10
+DAMAGE: 2
+COST: 2
+SPEED: 5
+RESISTANCE: fire
+DAMAGE_TYPE: water
+X: 33
+Y: 4
+ 

@@ -1,0 +1,70 @@
+\hypertarget{classCempty__space}{}\doxysection{Cempty\+\_\+space Class Reference}
+\label{classCempty__space}\index{Cempty\_space@{Cempty\_space}}
+
+
+tile representing an empty space  
+
+
+
+
+{\ttfamily \#include $<$empty\+\_\+space.\+hpp$>$}
+
+
+
+Inheritance diagram for Cempty\+\_\+space\+:
+% FIG 0
+
+
+Collaboration diagram for Cempty\+\_\+space\+:
+% FIG 1
+\doxysubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{classCempty__space_a66ddf52f2b38775679114f45d04c54ae}\label{classCempty__space_a66ddf52f2b38775679114f45d04c54ae}} 
+{\bfseries Cempty\+\_\+space} (char symbol, bool passable, int y, int x)
+\item 
+void \mbox{\hyperlink{classCempty__space_abadfeaef1cb3d6a36c81c1bcc0f09954}{get\+Pos\+Value}} (int \&AOE, int \&ST, int \&BLOCK)
+\begin{DoxyCompactList}\small\item\em Function for getting an empty space\textquotesingle{}s value. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\doxysubsection*{Additional Inherited Members}
+
+
+\doxysubsection{Detailed Description}
+tile representing an empty space 
+
+\doxysubsection{Member Function Documentation}
+\mbox{\Hypertarget{classCempty__space_abadfeaef1cb3d6a36c81c1bcc0f09954}\label{classCempty__space_abadfeaef1cb3d6a36c81c1bcc0f09954}} 
+\index{Cempty\_space@{Cempty\_space}!getPosValue@{getPosValue}}
+\index{getPosValue@{getPosValue}!Cempty\_space@{Cempty\_space}}
+\doxysubsubsection{\texorpdfstring{getPosValue()}{getPosValue()}}
+{\footnotesize\ttfamily void Cempty\+\_\+space\+::get\+Pos\+Value (\begin{DoxyParamCaption}\item[{int \&}]{AOE,  }\item[{int \&}]{ST,  }\item[{int \&}]{BLOCK }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [virtual]}}
+
+
+
+Function for getting an empty space\textquotesingle{}s value. 
+
+Function for determining tile\textquotesingle{}s value for placement of a tower with lower being more valueable.
+
+ST -\/ It is lowered by how many paths and unit it has in range and increased if it is in range of a another tower or on the attacker\textquotesingle{}s path
+
+AOE -\/ It is decreased by by the same values as ST but it has only the reach of it\textquotesingle{}s neighbours
+
+BLOCK -\/ Block is decreased if it has another tower or wall next it whether horizontaly or verticaly. It further decreses if on unit\textquotesingle{}s path.
+
+
+\begin{DoxyParams}{Parameters}
+{\em AOE} & Value for an AOE tower \\
+\hline
+{\em ST} & Value for an ST tower \\
+\hline
+{\em BLOCK} & Value for a obstacle tower \\
+\hline
+\end{DoxyParams}
+
+
+Implements \mbox{\hyperlink{classCMapTiles_a40222dcc3dec7eb7f8b479c789d37854}{CMap\+Tiles}}.
+
+
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+src/tiles/\+Maptiles/empty\+\_\+space.\+hpp\end{DoxyCompactItemize}

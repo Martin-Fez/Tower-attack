@@ -1,0 +1,112 @@
+\hypertarget{classCMapTiles}{}\doxysection{CMap\+Tiles Class Reference}
+\label{classCMapTiles}\index{CMapTiles@{CMapTiles}}
+
+
+Parent class for all map tiles.  
+
+
+
+
+{\ttfamily \#include $<$Maptiles.\+hpp$>$}
+
+
+
+Inheritance diagram for CMap\+Tiles\+:
+% FIG 0
+
+
+Collaboration diagram for CMap\+Tiles\+:
+% FIG 1
+\doxysubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{classCMapTiles_a1c4d7cd5245c6d644452d776dc95587f}\label{classCMapTiles_a1c4d7cd5245c6d644452d776dc95587f}} 
+{\bfseries CMap\+Tiles} (char symbol, bool passable, int y, int x)
+\item 
+\mbox{\Hypertarget{classCMapTiles_aaf83fedb221891dd906763892aba995a}\label{classCMapTiles_aaf83fedb221891dd906763892aba995a}} 
+{\bfseries CMap\+Tiles} (const \mbox{\hyperlink{classCMapTiles}{CMap\+Tiles}} \&src)
+\item 
+virtual void \mbox{\hyperlink{classCMapTiles_a40222dcc3dec7eb7f8b479c789d37854}{get\+Pos\+Value}} (int \&AOE, int \&ST, int \&BLOCK)=0
+\begin{DoxyCompactList}\small\item\em Pure virtual function for getting value position. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\doxysubsection*{Public Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{classCMapTiles_a38d7ee5fd7853cd700348da146c5f76b}\label{classCMapTiles_a38d7ee5fd7853cd700348da146c5f76b}} 
+bool {\bfseries c\+\_\+accessed} = false
+\item 
+\mbox{\Hypertarget{classCMapTiles_a60bfed04404a711e8d30073a85bae788}\label{classCMapTiles_a60bfed04404a711e8d30073a85bae788}} 
+bool {\bfseries c\+\_\+path\+\_\+visited} = false
+\item 
+\mbox{\Hypertarget{classCMapTiles_a69a4962ba0343dc8a25dbe09aeeacf1c}\label{classCMapTiles_a69a4962ba0343dc8a25dbe09aeeacf1c}} 
+float {\bfseries c\+\_\+f\+Global\+Goal}
+\item 
+\mbox{\Hypertarget{classCMapTiles_a8e52164f5fd4ee5825f1cbabd711d115}\label{classCMapTiles_a8e52164f5fd4ee5825f1cbabd711d115}} 
+float {\bfseries c\+\_\+f\+Local\+Goal}
+\item 
+\mbox{\Hypertarget{classCMapTiles_ad247b7f7730100de100be1b1fdc060e4}\label{classCMapTiles_ad247b7f7730100de100be1b1fdc060e4}} 
+weak\+\_\+ptr$<$ \mbox{\hyperlink{classCMapTiles}{CMap\+Tiles}} $>$ {\bfseries c\+\_\+parent}
+\item 
+\mbox{\Hypertarget{classCMapTiles_a4e4ae53a0cc266377855c96611f39809}\label{classCMapTiles_a4e4ae53a0cc266377855c96611f39809}} 
+int {\bfseries num\+\_\+of\+\_\+paths}
+\item 
+\mbox{\Hypertarget{classCMapTiles_a3d2c93f94c86b9177cb5e2d3c5d71630}\label{classCMapTiles_a3d2c93f94c86b9177cb5e2d3c5d71630}} 
+int {\bfseries c\+\_\+range\+\_\+distance}
+\item 
+\mbox{\Hypertarget{classCMapTiles_a13a192bcda0044b6c5ad485d134aa5a3}\label{classCMapTiles_a13a192bcda0044b6c5ad485d134aa5a3}} 
+bool {\bfseries in\+\_\+range} = false
+\item 
+\mbox{\Hypertarget{classCMapTiles_a2778232ba70f0cbba313365fb01c5d17}\label{classCMapTiles_a2778232ba70f0cbba313365fb01c5d17}} 
+vector$<$ weak\+\_\+ptr$<$ \mbox{\hyperlink{classCMapTiles}{CMap\+Tiles}} $>$ $>$ {\bfseries c\+\_\+\+Neighbours}
+\item 
+\mbox{\Hypertarget{classCMapTiles_ae738aa11876ef746c4f4c588819f02f2}\label{classCMapTiles_ae738aa11876ef746c4f4c588819f02f2}} 
+vector$<$ weak\+\_\+ptr$<$ \mbox{\hyperlink{classCMapTiles}{CMap\+Tiles}} $>$ $>$ {\bfseries c\+\_\+range\+\_\+access}
+\item 
+\mbox{\Hypertarget{classCMapTiles_a3aa119754f3758002d407f4437125b34}\label{classCMapTiles_a3aa119754f3758002d407f4437125b34}} 
+weak\+\_\+ptr$<$ \mbox{\hyperlink{classCUnit}{CUnit}} $>$ {\bfseries c\+\_\+unit\+Tile\+\_\+ptr}
+\item 
+\mbox{\Hypertarget{classCMapTiles_adfb8bc8151ea9d893083c38375737c80}\label{classCMapTiles_adfb8bc8151ea9d893083c38375737c80}} 
+bool {\bfseries Occupied\+\_\+by\+\_\+unit} = false
+\item 
+\mbox{\Hypertarget{classCMapTiles_a3ebef3b7ec25f0559e036b65af021c13}\label{classCMapTiles_a3ebef3b7ec25f0559e036b65af021c13}} 
+bool {\bfseries Occupied\+\_\+by\+\_\+tower} = false
+\item 
+\mbox{\Hypertarget{classCMapTiles_ac712a01b7099198800b146981a53eb2e}\label{classCMapTiles_ac712a01b7099198800b146981a53eb2e}} 
+int {\bfseries num\+\_\+of\+\_\+paths\+\_\+in\+\_\+range}
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+Parent class for all map tiles. 
+
+\doxysubsection{Member Function Documentation}
+\mbox{\Hypertarget{classCMapTiles_a40222dcc3dec7eb7f8b479c789d37854}\label{classCMapTiles_a40222dcc3dec7eb7f8b479c789d37854}} 
+\index{CMapTiles@{CMapTiles}!getPosValue@{getPosValue}}
+\index{getPosValue@{getPosValue}!CMapTiles@{CMapTiles}}
+\doxysubsubsection{\texorpdfstring{getPosValue()}{getPosValue()}}
+{\footnotesize\ttfamily virtual void CMap\+Tiles\+::get\+Pos\+Value (\begin{DoxyParamCaption}\item[{int \&}]{AOE,  }\item[{int \&}]{ST,  }\item[{int \&}]{BLOCK }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [pure virtual]}}
+
+
+
+Pure virtual function for getting value position. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em AOE} & Value of AOE towers \\
+\hline
+{\em ST} & Value of ST towers \\
+\hline
+{\em BLOCK} & Value of obstacle towers \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+int 
+\end{DoxyReturn}
+
+
+Implemented in \mbox{\hyperlink{classCwall_ada165b866da58c8ddbb7aa05dd486b61}{Cwall}}, and \mbox{\hyperlink{classCempty__space_abadfeaef1cb3d6a36c81c1bcc0f09954}{Cempty\+\_\+space}}.
+
+
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+src/tiles/Maptiles.\+hpp\end{DoxyCompactItemize}

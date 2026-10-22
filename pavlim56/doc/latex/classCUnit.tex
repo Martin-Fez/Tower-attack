@@ -1,0 +1,83 @@
+\hypertarget{classCUnit}{}\doxysection{CUnit Class Reference}
+\label{classCUnit}\index{CUnit@{CUnit}}
+
+
+Parent class for all units.  
+
+
+
+
+{\ttfamily \#include $<$Unit.\+hpp$>$}
+
+
+
+Inheritance diagram for CUnit\+:
+% FIG 0
+
+
+Collaboration diagram for CUnit\+:
+% FIG 1
+\doxysubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{classCUnit_a0e56ffa07b089e75963e8e0c61ef53e8}\label{classCUnit_a0e56ffa07b089e75963e8e0c61ef53e8}} 
+{\bfseries CUnit} (char symbol, bool passable, int y, int x, string name, int HP, int damage, \mbox{\hyperlink{classCdamage__type}{Cdamage\+\_\+type}} resistance, \mbox{\hyperlink{classCdamage__type}{Cdamage\+\_\+type}} dmg\+\_\+type)
+\item 
+\mbox{\Hypertarget{classCUnit_a8a4c346da6d478b35ef3205eb43ed2b1}\label{classCUnit_a8a4c346da6d478b35ef3205eb43ed2b1}} 
+{\bfseries CUnit} (const \mbox{\hyperlink{classCUnit}{CUnit}} \&src)
+\item 
+virtual list$<$ string $>$ \mbox{\hyperlink{classCUnit_a3c363a0841a929951557b26a90c5ca0f}{Save\+Unit\+Data}} (bool active)=0
+\begin{DoxyCompactList}\small\item\em Pure virtual function for Save\+Unit\+Data. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\doxysubsection*{Public Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{classCUnit_a5e090bed7f394ccab6f3cb229db432b1}\label{classCUnit_a5e090bed7f394ccab6f3cb229db432b1}} 
+string {\bfseries c\+\_\+tile\+Name}
+\item 
+\mbox{\Hypertarget{classCUnit_a8496b084745cd4b203e8119d318dc662}\label{classCUnit_a8496b084745cd4b203e8119d318dc662}} 
+int {\bfseries c\+\_\+\+HP}
+\item 
+\mbox{\Hypertarget{classCUnit_a93d4d55ca651380877382a8c4b06e109}\label{classCUnit_a93d4d55ca651380877382a8c4b06e109}} 
+int {\bfseries c\+\_\+damage}
+\item 
+\mbox{\Hypertarget{classCUnit_a7d862b0645a0508bca96cdacfedd1f5a}\label{classCUnit_a7d862b0645a0508bca96cdacfedd1f5a}} 
+\mbox{\hyperlink{classCdamage__type}{Cdamage\+\_\+type}} {\bfseries c\+\_\+resistance}
+\item 
+\mbox{\Hypertarget{classCUnit_a4971d195143a22d3a7b6651505a46e14}\label{classCUnit_a4971d195143a22d3a7b6651505a46e14}} 
+\mbox{\hyperlink{classCdamage__type}{Cdamage\+\_\+type}} {\bfseries c\+\_\+dmg\+\_\+type}
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+Parent class for all units. 
+
+Parent class for towers and attackers 
+
+\doxysubsection{Member Function Documentation}
+\mbox{\Hypertarget{classCUnit_a3c363a0841a929951557b26a90c5ca0f}\label{classCUnit_a3c363a0841a929951557b26a90c5ca0f}} 
+\index{CUnit@{CUnit}!SaveUnitData@{SaveUnitData}}
+\index{SaveUnitData@{SaveUnitData}!CUnit@{CUnit}}
+\doxysubsubsection{\texorpdfstring{SaveUnitData()}{SaveUnitData()}}
+{\footnotesize\ttfamily virtual list$<$string$>$ CUnit\+::\+Save\+Unit\+Data (\begin{DoxyParamCaption}\item[{bool}]{active }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [pure virtual]}}
+
+
+
+Pure virtual function for Save\+Unit\+Data. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em active} & Whether we are saving a active unit or non-\/active \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+list$<$string$>$ Data to be returned 
+\end{DoxyReturn}
+
+
+Implemented in \mbox{\hyperlink{classCtower_a090acb1aa1ddbc4fb685cc6bcd4f6429}{Ctower}}, and \mbox{\hyperlink{classCattacker_a82cf62924024e3e1e26302bea7934460}{Cattacker}}.
+
+
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+src/tiles/Unit.\+hpp\end{DoxyCompactItemize}

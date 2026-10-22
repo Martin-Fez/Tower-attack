@@ -1,0 +1,53 @@
+TOWER:
+NAME: StrawWall
+SYMBOL: W
+HEALTH: 30
+DAMAGE: 1
+COOLDOWN: 2
+TIMER: 1
+TYPE: BLOCK
+RESISTANCE: fire
+ 
+END_OF_TOWERS
+ 
+UNIT:
+NAME: Mantis
+SYMBOL: Z
+HEALTH: 10
+DAMAGE: 2
+COST: 2
+SPEED: 5
+RESISTANCE: fire
+DAMAGE_TYPE: water
+ 
+UNIT:
+NAME: Metal slug
+SYMBOL: @
+HEALTH: 30
+DAMAGE: 5
+COST: 10
+SPEED: 2
+DAMAGE_TYPE: fire
+ 
+END_OF_UNITS
+STATUS:
+HEALTH: 50
+MAX_ROUNDS: 200
+MONEY: 20
+INCOME: 10
+                                                  
+################################################# 
+#                        #           #         <=3
+#         #              #           ###        # 
+#         #              #     #       #        # 
+<=        #                    #       #       <=1
+#         #                    #                # 
+#                              #                # 
+#                              #               <=2
+################################################# 
+                                                  
+                                                  
+                                                  
+END_OF_MAP
+ROUND: 1
+SCORE: 0

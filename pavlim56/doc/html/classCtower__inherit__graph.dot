@@ -1,0 +1,17 @@
+digraph "Ctower"
+{
+ // LATEX_PDF_SIZE
+  edge [fontname="Helvetica",fontsize="10",labelfontname="Helvetica",labelfontsize="10"];
+  node [fontname="Helvetica",fontsize="10",shape=record];
+  Node1 [label="Ctower",height=0.2,width=0.4,color="black", fillcolor="grey75", style="filled", fontcolor="black",tooltip="parent class for all tower types"];
+  Node2 -> Node1 [dir="back",color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node2 [label="CUnit",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$classCUnit.html",tooltip="Parent class for all units."];
+  Node3 -> Node2 [dir="back",color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node3 [label="Ctiles",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$classCtiles.html",tooltip="Parent class for tiles."];
+  Node1 -> Node4 [dir="back",color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node4 [label="CTowerAOE",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$classCTowerAOE.html",tooltip="Tile for towers that deal damage in area of effect."];
+  Node1 -> Node5 [dir="back",color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node5 [label="CTowerObstacle",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$classCTowerObstacle.html",tooltip="Tile meant to function as a obstacle for attackers."];
+  Node1 -> Node6 [dir="back",color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node6 [label="CTowerSingleTG",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$classCTowerSingleTG.html",tooltip="Tile for towers that target a single attacker."];
+}

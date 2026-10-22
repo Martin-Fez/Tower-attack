@@ -1,0 +1,56 @@
+\hypertarget{classCTowerSingleTG}{}\doxysection{CTower\+Single\+TG Class Reference}
+\label{classCTowerSingleTG}\index{CTowerSingleTG@{CTowerSingleTG}}
+
+
+Tile for towers that target a single attacker.  
+
+
+
+
+{\ttfamily \#include $<$Tower\+Single\+TG.\+hpp$>$}
+
+
+
+Inheritance diagram for CTower\+Single\+TG\+:
+% FIG 0
+
+
+Collaboration diagram for CTower\+Single\+TG\+:
+% FIG 1
+\doxysubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{classCTowerSingleTG_a8fdaea6a59df3542606e920ea73d259e}\label{classCTowerSingleTG_a8fdaea6a59df3542606e920ea73d259e}} 
+{\bfseries CTower\+Single\+TG} (char symbol, bool passable, int y, int x, string name, int HP, int damage, \mbox{\hyperlink{classCdamage__type}{Cdamage\+\_\+type}} resistance, \mbox{\hyperlink{classCdamage__type}{Cdamage\+\_\+type}} dmg\+\_\+type, int cooldown, int timer, string type, int reach)
+\item 
+\mbox{\Hypertarget{classCTowerSingleTG_a947eb02f0c9c1bf46a5bfa72030111b7}\label{classCTowerSingleTG_a947eb02f0c9c1bf46a5bfa72030111b7}} 
+{\bfseries CTower\+Single\+TG} (const \mbox{\hyperlink{classCtower}{Ctower}} \&src)
+\item 
+void \mbox{\hyperlink{classCTowerSingleTG_a83ca6d640d8a8ffa2a79f46df2b039d6}{attack\+\_\+enemy}} ()
+\begin{DoxyCompactList}\small\item\em Attacks a single enemy. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\doxysubsection*{Additional Inherited Members}
+
+
+\doxysubsection{Detailed Description}
+Tile for towers that target a single attacker. 
+
+\doxysubsection{Member Function Documentation}
+\mbox{\Hypertarget{classCTowerSingleTG_a83ca6d640d8a8ffa2a79f46df2b039d6}\label{classCTowerSingleTG_a83ca6d640d8a8ffa2a79f46df2b039d6}} 
+\index{CTowerSingleTG@{CTowerSingleTG}!attack\_enemy@{attack\_enemy}}
+\index{attack\_enemy@{attack\_enemy}!CTowerSingleTG@{CTowerSingleTG}}
+\doxysubsubsection{\texorpdfstring{attack\_enemy()}{attack\_enemy()}}
+{\footnotesize\ttfamily void CTower\+Single\+TG\+::attack\+\_\+enemy (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [virtual]}}
+
+
+
+Attacks a single enemy. 
+
+Attacks a single enemy within it\textquotesingle{}s designated reach HP of attackers is reduced by the amount of dmg ST tower has and whether they resitant or not. 
+
+Implements \mbox{\hyperlink{classCtower_ac587f9f63b3f6389f11d527dbef695d3}{Ctower}}.
+
+
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+src/tiles/towers/Tower\+Single\+TG.\+hpp\end{DoxyCompactItemize}

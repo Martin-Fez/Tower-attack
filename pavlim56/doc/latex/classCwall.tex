@@ -1,0 +1,64 @@
+\hypertarget{classCwall}{}\doxysection{Cwall Class Reference}
+\label{classCwall}\index{Cwall@{Cwall}}
+
+
+Tile representing a wall.  
+
+
+
+
+{\ttfamily \#include $<$wall.\+hpp$>$}
+
+
+
+Inheritance diagram for Cwall\+:
+% FIG 0
+
+
+Collaboration diagram for Cwall\+:
+% FIG 1
+\doxysubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{classCwall_a90290d28fcf0de814552265e29d387f9}\label{classCwall_a90290d28fcf0de814552265e29d387f9}} 
+{\bfseries Cwall} (char symbol, bool passable, int y, int x)
+\item 
+void \mbox{\hyperlink{classCwall_ada165b866da58c8ddbb7aa05dd486b61}{get\+Pos\+Value}} (int \&AOE, int \&ST, int \&BLOCK)
+\begin{DoxyCompactList}\small\item\em Returns the placement value for towers. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\doxysubsection*{Additional Inherited Members}
+
+
+\doxysubsection{Detailed Description}
+Tile representing a wall. 
+
+\doxysubsection{Member Function Documentation}
+\mbox{\Hypertarget{classCwall_ada165b866da58c8ddbb7aa05dd486b61}\label{classCwall_ada165b866da58c8ddbb7aa05dd486b61}} 
+\index{Cwall@{Cwall}!getPosValue@{getPosValue}}
+\index{getPosValue@{getPosValue}!Cwall@{Cwall}}
+\doxysubsubsection{\texorpdfstring{getPosValue()}{getPosValue()}}
+{\footnotesize\ttfamily void Cwall\+::get\+Pos\+Value (\begin{DoxyParamCaption}\item[{int \&}]{AOE,  }\item[{int \&}]{ST,  }\item[{int \&}]{BLOCK }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [virtual]}}
+
+
+
+Returns the placement value for towers. 
+
+Due to being a wall all the returned values are the highest maximum possible
+
+
+\begin{DoxyParams}{Parameters}
+{\em AOE} & \\
+\hline
+{\em ST} & \\
+\hline
+{\em BLOCK} & \\
+\hline
+\end{DoxyParams}
+
+
+Implements \mbox{\hyperlink{classCMapTiles_a40222dcc3dec7eb7f8b479c789d37854}{CMap\+Tiles}}.
+
+
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+src/tiles/\+Maptiles/wall.\+hpp\end{DoxyCompactItemize}

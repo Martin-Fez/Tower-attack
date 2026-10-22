@@ -1,0 +1,116 @@
+\hypertarget{classLoadFile}{}\doxysection{Load\+File Class Reference}
+\label{classLoadFile}\index{LoadFile@{LoadFile}}
+
+
+Class containing functions for interacting with files.  
+
+
+
+
+{\ttfamily \#include $<$load\+File\+Func.\+hpp$>$}
+
+\doxysubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+string \mbox{\hyperlink{classLoadFile_a9a740aab300f157d1b01794d675ef31d}{choose\+File}} (vector$<$ string $>$ files, bool \&go\+Back)
+\begin{DoxyCompactList}\small\item\em function for printing out available files and returning chosen files \end{DoxyCompactList}\item 
+list$<$ string $>$ \mbox{\hyperlink{classLoadFile_a2fe5fcfb20e29a66e3bc985bcec53bca}{load\+File}} (string file\+Name)
+\begin{DoxyCompactList}\small\item\em fucntion for reading a regular file \end{DoxyCompactList}\item 
+vector$<$ string $>$ \mbox{\hyperlink{classLoadFile_ac9cf9fe54db40f66642a1f179f7c232a}{file\+Names}} (string directory\+Name)
+\begin{DoxyCompactList}\small\item\em function for reading contents of a directory \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{classLoadFile_ad0182413aa0f0770b91afa0c3238e49e}{save\+Game}} (list$<$ string $>$ game\+Data, string Savename, string directory)
+\begin{DoxyCompactList}\small\item\em Function for saving a game\textquotesingle{}s data into a file. \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+Class containing functions for interacting with files. 
+
+\doxysubsection{Member Function Documentation}
+\mbox{\Hypertarget{classLoadFile_a9a740aab300f157d1b01794d675ef31d}\label{classLoadFile_a9a740aab300f157d1b01794d675ef31d}} 
+\index{LoadFile@{LoadFile}!chooseFile@{chooseFile}}
+\index{chooseFile@{chooseFile}!LoadFile@{LoadFile}}
+\doxysubsubsection{\texorpdfstring{chooseFile()}{chooseFile()}}
+{\footnotesize\ttfamily string Load\+File\+::choose\+File (\begin{DoxyParamCaption}\item[{vector$<$ string $>$}]{files,  }\item[{bool \&}]{go\+Back }\end{DoxyParamCaption})}
+
+
+
+function for printing out available files and returning chosen files 
+
+Function prints out all available files in a given file and asks the user to input which file they wish to use. Depending on the choice the functions either returns back or return the chosen name. If the file is empty, fucntion returns an empty string
+
+
+\begin{DoxyParams}{Parameters}
+{\em files} & vector of names of available files \\
+\hline
+{\em go\+Back} & bool for returning from choice to menu \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+string chosen file\textquotesingle{}s name 
+\end{DoxyReturn}
+\mbox{\Hypertarget{classLoadFile_ac9cf9fe54db40f66642a1f179f7c232a}\label{classLoadFile_ac9cf9fe54db40f66642a1f179f7c232a}} 
+\index{LoadFile@{LoadFile}!fileNames@{fileNames}}
+\index{fileNames@{fileNames}!LoadFile@{LoadFile}}
+\doxysubsubsection{\texorpdfstring{fileNames()}{fileNames()}}
+{\footnotesize\ttfamily vector$<$string$>$ Load\+File\+::file\+Names (\begin{DoxyParamCaption}\item[{string}]{directory\+Name }\end{DoxyParamCaption})}
+
+
+
+function for reading contents of a directory 
+
+Function checks whether given input is a directory and then inputs all of the file names within it into a vector of strings
+
+
+\begin{DoxyParams}{Parameters}
+{\em directory\+Name} & directory to be read from \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+vector$<$string$>$ Names of files within a directory 
+\end{DoxyReturn}
+\mbox{\Hypertarget{classLoadFile_a2fe5fcfb20e29a66e3bc985bcec53bca}\label{classLoadFile_a2fe5fcfb20e29a66e3bc985bcec53bca}} 
+\index{LoadFile@{LoadFile}!loadFile@{loadFile}}
+\index{loadFile@{loadFile}!LoadFile@{LoadFile}}
+\doxysubsubsection{\texorpdfstring{loadFile()}{loadFile()}}
+{\footnotesize\ttfamily list$<$string$>$ Load\+File\+::load\+File (\begin{DoxyParamCaption}\item[{string}]{file\+Name }\end{DoxyParamCaption})}
+
+
+
+fucntion for reading a regular file 
+
+Function is responsible for checking whether inputed file name is a regular file and openable and then reads the contents of said file and line by line inputs it into a list of strings(each string being a line)
+
+
+\begin{DoxyParams}{Parameters}
+{\em file\+Name} & file\textquotesingle{}s name \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+list$<$string$>$ contents of the read file 
+\end{DoxyReturn}
+\mbox{\Hypertarget{classLoadFile_ad0182413aa0f0770b91afa0c3238e49e}\label{classLoadFile_ad0182413aa0f0770b91afa0c3238e49e}} 
+\index{LoadFile@{LoadFile}!saveGame@{saveGame}}
+\index{saveGame@{saveGame}!LoadFile@{LoadFile}}
+\doxysubsubsection{\texorpdfstring{saveGame()}{saveGame()}}
+{\footnotesize\ttfamily void Load\+File\+::save\+Game (\begin{DoxyParamCaption}\item[{list$<$ string $>$}]{game\+Data,  }\item[{string}]{Savename,  }\item[{string}]{directory }\end{DoxyParamCaption})}
+
+
+
+Function for saving a game\textquotesingle{}s data into a file. 
+
+Functions checks whether given directory and name are valid and then creates a file with given name and inputs all of the contents of the list of string into the file(with one string being one line)
+
+
+\begin{DoxyParams}{Parameters}
+{\em game\+Data} & all of a game\textquotesingle{}s data within a list of strings \\
+\hline
+{\em Savename} & name of the save to be created \\
+\hline
+{\em directory} & directory where the save is to be created \\
+\hline
+\end{DoxyParams}
+
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+src/extra\+\_\+func/load\+File\+Func.\+hpp\end{DoxyCompactItemize}

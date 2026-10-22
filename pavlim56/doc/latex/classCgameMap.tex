@@ -1,0 +1,289 @@
+\hypertarget{classCgameMap}{}\doxysection{Cgame\+Map Class Reference}
+\label{classCgameMap}\index{CgameMap@{CgameMap}}
+
+
+Class for managing the game Map and its units.  
+
+
+
+
+{\ttfamily \#include $<$game\+Map.\+hpp$>$}
+
+\doxysubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+bool \mbox{\hyperlink{classCgameMap_a5d48e8f0ed3af82c360014feef5f90a5}{load\+Save}} (list$<$ string $>$ \&save)
+\begin{DoxyCompactList}\small\item\em Function for loading inputed data as a game. \end{DoxyCompactList}\item 
+bool \mbox{\hyperlink{classCgameMap_a5793ba5b522bea14dc935aa0fd830df4}{read\+Towers}} (list$<$ string $>$ \&tower\+Folder)
+\begin{DoxyCompactList}\small\item\em Function reads inputed tower data. \end{DoxyCompactList}\item 
+bool \mbox{\hyperlink{classCgameMap_aee1d595bf6f4f274346a3311a0d2867d}{read\+Attacker}} (list$<$ string $>$ \&Attacker\+Folder)
+\begin{DoxyCompactList}\small\item\em Function reads inputed attacker data. \end{DoxyCompactList}\item 
+bool \mbox{\hyperlink{classCgameMap_ad4b2d04471e9c263e3c8b5d0a1b0fb9e}{read\+Map}} (list$<$ string $>$ \&map)
+\begin{DoxyCompactList}\small\item\em Function for reading ASCII and data of a map. \end{DoxyCompactList}\item 
+bool \mbox{\hyperlink{classCgameMap_af01b13a418bbd23170fb087f994147df}{read\+Active\+Units}} (list$<$ string $>$ \&save)
+\begin{DoxyCompactList}\small\item\em Function for reading all active units. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{classCgameMap_a5f983c86e874d0c734575e8dd75edb89}{display\+\_\+map}} () const
+\begin{DoxyCompactList}\small\item\em Function for displaying current active map. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{classCgameMap_af272536b46b2b4b8c627c3354867f273}{display\+\_\+units}} () const
+\begin{DoxyCompactList}\small\item\em Function for displaying all the available units. \end{DoxyCompactList}\item 
+bool \mbox{\hyperlink{classCgameMap_a5453dbcc00b7bd7dec375a46d13a026f}{choose\+\_\+units}} (int const chosen\+\_\+unit\+\_\+num, int const num\+Of\+Units)
+\begin{DoxyCompactList}\small\item\em Function for loading a chosen number of unit. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{classCgameMap_a8d305cbe116baef46f26935da02a3ea1}{place\+\_\+units}} (int const entrace)
+\begin{DoxyCompactList}\small\item\em Function responsible for placing units on the map. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{classCgameMap_a15b23489095d1f74ce078ebf4a98a974}{advance\+Round}} (const int Roundnum)
+\begin{DoxyCompactList}\small\item\em Function responsible for advancing the round. \end{DoxyCompactList}\item 
+list$<$ string $>$ \mbox{\hyperlink{classCgameMap_a77403972d6961f21a84b92c8344b3525}{save\+Data}} ()
+\begin{DoxyCompactList}\small\item\em Function for saving all of the active game\textquotesingle{}s data into a list of strings. \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{classCgameMap_a9d9cbd975a67638b1434742f46ef304d}\label{classCgameMap_a9d9cbd975a67638b1434742f46ef304d}} 
+void \mbox{\hyperlink{classCgameMap_a9d9cbd975a67638b1434742f46ef304d}{reset\+Game}} ()
+\begin{DoxyCompactList}\small\item\em Function for reseting all the game data within the class. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{classCgameMap_a0932ef7b285e40e802519e15a5087d5a}{place\+Towers}} ()
+\begin{DoxyCompactList}\small\item\em Function for placing a tower. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\doxysubsection*{Public Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{classCgameMap_a4d4a90bdcc1a7edf2774046583de5b2e}\label{classCgameMap_a4d4a90bdcc1a7edf2774046583de5b2e}} 
+map$<$ char, pair$<$ int, int $>$ $>$ {\bfseries c\+\_\+entrace\+Cords}
+\item 
+\mbox{\Hypertarget{classCgameMap_a33ec76e3009420d6837c237b7ee767ef}\label{classCgameMap_a33ec76e3009420d6837c237b7ee767ef}} 
+set$<$ pair$<$ int, int $>$ $>$ {\bfseries c\+\_\+exit\+Cords}
+\item 
+\mbox{\Hypertarget{classCgameMap_a2040e010cfbe73b5e1f7d6283908f0da}\label{classCgameMap_a2040e010cfbe73b5e1f7d6283908f0da}} 
+int {\bfseries c\+\_\+number\+\_\+of\+\_\+available\+\_\+units}
+\item 
+\mbox{\Hypertarget{classCgameMap_a6e1644f53d3ac0d1d9d44a9e204e6281}\label{classCgameMap_a6e1644f53d3ac0d1d9d44a9e204e6281}} 
+int {\bfseries c\+\_\+number\+\_\+of\+\_\+entraces}
+\item 
+\mbox{\Hypertarget{classCgameMap_ae4a93fb1744953a7a80cfc57bd7a4397}\label{classCgameMap_ae4a93fb1744953a7a80cfc57bd7a4397}} 
+bool {\bfseries c\+\_\+victory} = false
+\item 
+\mbox{\Hypertarget{classCgameMap_a4d1234be2651b6e4757d7829c5049b7b}\label{classCgameMap_a4d1234be2651b6e4757d7829c5049b7b}} 
+bool {\bfseries c\+\_\+defeat} = false
+\item 
+\mbox{\Hypertarget{classCgameMap_a0bdba8f79d58c438d7e2020ee1dde797}\label{classCgameMap_a0bdba8f79d58c438d7e2020ee1dde797}} 
+int {\bfseries c\+\_\+score} = 0
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+Class for managing the game Map and its units. 
+
+\doxysubsection{Member Function Documentation}
+\mbox{\Hypertarget{classCgameMap_a15b23489095d1f74ce078ebf4a98a974}\label{classCgameMap_a15b23489095d1f74ce078ebf4a98a974}} 
+\index{CgameMap@{CgameMap}!advanceRound@{advanceRound}}
+\index{advanceRound@{advanceRound}!CgameMap@{CgameMap}}
+\doxysubsubsection{\texorpdfstring{advanceRound()}{advanceRound()}}
+{\footnotesize\ttfamily void Cgame\+Map\+::advance\+Round (\begin{DoxyParamCaption}\item[{const int}]{Roundnum }\end{DoxyParamCaption})}
+
+
+
+Function responsible for advancing the round. 
+
+Function for Roundnum rounds advances the game. Per each round the function first checks whether one the game ending conditions have been met After that it places all avaiable towers that can be placed and attacks with the towers. All of the killed attackers are removed. After this each attacker recalculates their path moves forward along it. If an attacker reaches the end it is removed from the game after dealing damage to the enemy\textquotesingle{}s HP and the player is awarded score and money. Finaly all of the towers that have been killed by the attacker are removed and additional money for the player is calculated from the HP diffrence
+
+
+\begin{DoxyParams}{Parameters}
+{\em Roundnum} & Number of rounds the user wishes to advance \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{classCgameMap_a5453dbcc00b7bd7dec375a46d13a026f}\label{classCgameMap_a5453dbcc00b7bd7dec375a46d13a026f}} 
+\index{CgameMap@{CgameMap}!choose\_units@{choose\_units}}
+\index{choose\_units@{choose\_units}!CgameMap@{CgameMap}}
+\doxysubsubsection{\texorpdfstring{choose\_units()}{choose\_units()}}
+{\footnotesize\ttfamily bool Cgame\+Map\+::choose\+\_\+units (\begin{DoxyParamCaption}\item[{int const}]{chosen\+\_\+unit\+\_\+num,  }\item[{int const}]{num\+Of\+Units }\end{DoxyParamCaption})}
+
+
+
+Function for loading a chosen number of unit. 
+
+Function loads a chosen unit as a copy from c\+\_\+unit\+\_\+tiles and places it into a temporary container
+
+
+\begin{DoxyParams}{Parameters}
+{\em chosen\+\_\+unit\+\_\+num} & Number coresponding to the chosen unit \\
+\hline
+{\em num\+Of\+Units} & Number of chosen units \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+true true Enough money is available and the unit can be placed 
+
+false false Enough money is not available and the unit cannot be placed 
+\end{DoxyReturn}
+\mbox{\Hypertarget{classCgameMap_a5f983c86e874d0c734575e8dd75edb89}\label{classCgameMap_a5f983c86e874d0c734575e8dd75edb89}} 
+\index{CgameMap@{CgameMap}!display\_map@{display\_map}}
+\index{display\_map@{display\_map}!CgameMap@{CgameMap}}
+\doxysubsubsection{\texorpdfstring{display\_map()}{display\_map()}}
+{\footnotesize\ttfamily void Cgame\+Map\+::display\+\_\+map (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const}
+
+
+
+Function for displaying current active map. 
+
+Function for displaying current active map and all the units upon it. \mbox{\Hypertarget{classCgameMap_af272536b46b2b4b8c627c3354867f273}\label{classCgameMap_af272536b46b2b4b8c627c3354867f273}} 
+\index{CgameMap@{CgameMap}!display\_units@{display\_units}}
+\index{display\_units@{display\_units}!CgameMap@{CgameMap}}
+\doxysubsubsection{\texorpdfstring{display\_units()}{display\_units()}}
+{\footnotesize\ttfamily void Cgame\+Map\+::display\+\_\+units (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const}
+
+
+
+Function for displaying all the available units. 
+
+Function that displays all of the units that were loaded and are available. The parameters that are displayed are\+: name, HP, DMG and cost \mbox{\Hypertarget{classCgameMap_a5d48e8f0ed3af82c360014feef5f90a5}\label{classCgameMap_a5d48e8f0ed3af82c360014feef5f90a5}} 
+\index{CgameMap@{CgameMap}!loadSave@{loadSave}}
+\index{loadSave@{loadSave}!CgameMap@{CgameMap}}
+\doxysubsubsection{\texorpdfstring{loadSave()}{loadSave()}}
+{\footnotesize\ttfamily bool Cgame\+Map\+::load\+Save (\begin{DoxyParamCaption}\item[{list$<$ string $>$ \&}]{save }\end{DoxyParamCaption})}
+
+
+
+Function for loading inputed data as a game. 
+
+Fucntion responsible for loading game data from a save. The fucntion uses the functions read\+Towers, read\+Units and read\+Map to load their respective data, then loads current score and round and loads active units though load\+Active\+Units
+
+
+\begin{DoxyParams}{Parameters}
+{\em save} & Inputed data of the save \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+true succesfully laoded 
+
+false Failed to load 
+\end{DoxyReturn}
+\mbox{\Hypertarget{classCgameMap_a8d305cbe116baef46f26935da02a3ea1}\label{classCgameMap_a8d305cbe116baef46f26935da02a3ea1}} 
+\index{CgameMap@{CgameMap}!place\_units@{place\_units}}
+\index{place\_units@{place\_units}!CgameMap@{CgameMap}}
+\doxysubsubsection{\texorpdfstring{place\_units()}{place\_units()}}
+{\footnotesize\ttfamily void Cgame\+Map\+::place\+\_\+units (\begin{DoxyParamCaption}\item[{int const}]{entrace }\end{DoxyParamCaption})}
+
+
+
+Function responsible for placing units on the map. 
+
+Function places and connects the unit to the map at the specified entrance. After which it calculates it\textquotesingle{}s path to the exit
+
+
+\begin{DoxyParams}{Parameters}
+{\em entrace} & entrances at which to place the unit \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{classCgameMap_a0932ef7b285e40e802519e15a5087d5a}\label{classCgameMap_a0932ef7b285e40e802519e15a5087d5a}} 
+\index{CgameMap@{CgameMap}!placeTowers@{placeTowers}}
+\index{placeTowers@{placeTowers}!CgameMap@{CgameMap}}
+\doxysubsubsection{\texorpdfstring{placeTowers()}{placeTowers()}}
+{\footnotesize\ttfamily void Cgame\+Map\+::place\+Towers (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Function for placing a tower. 
+
+Function calculates best spots for respective tower types and then checks if any of the towers can be placed. If yes, it will place it into the calculated spot on the map and connect it. \mbox{\Hypertarget{classCgameMap_af01b13a418bbd23170fb087f994147df}\label{classCgameMap_af01b13a418bbd23170fb087f994147df}} 
+\index{CgameMap@{CgameMap}!readActiveUnits@{readActiveUnits}}
+\index{readActiveUnits@{readActiveUnits}!CgameMap@{CgameMap}}
+\doxysubsubsection{\texorpdfstring{readActiveUnits()}{readActiveUnits()}}
+{\footnotesize\ttfamily bool Cgame\+Map\+::read\+Active\+Units (\begin{DoxyParamCaption}\item[{list$<$ string $>$ \&}]{save }\end{DoxyParamCaption})}
+
+
+
+Function for reading all active units. 
+
+Function responsible for loading all of the active units from a save. It determines whether it is a attacker or a tower, loads their respective parameters, inputs them into their respective containers and using coordinates specified within the data connects it with a tile on the loaded map.
+
+
+\begin{DoxyParams}{Parameters}
+{\em save} & Data contaning all the units \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+true Success loading active units 
+
+false Failure loading active units 
+\end{DoxyReturn}
+\mbox{\Hypertarget{classCgameMap_aee1d595bf6f4f274346a3311a0d2867d}\label{classCgameMap_aee1d595bf6f4f274346a3311a0d2867d}} 
+\index{CgameMap@{CgameMap}!readAttacker@{readAttacker}}
+\index{readAttacker@{readAttacker}!CgameMap@{CgameMap}}
+\doxysubsubsection{\texorpdfstring{readAttacker()}{readAttacker()}}
+{\footnotesize\ttfamily bool Cgame\+Map\+::read\+Attacker (\begin{DoxyParamCaption}\item[{list$<$ string $>$ \&}]{Attacker\+Folder }\end{DoxyParamCaption})}
+
+
+
+Function reads inputed attacker data. 
+
+Function reads attacker data and creates template attacker tiles based off from the given data The function also creates specific attacker types based off the given type Function while reading checks whether input contains only data needed for creation of a attacker. Each attacker is initialized with line containing \char`\"{}\+UNIT\+:\char`\"{}
+
+
+\begin{DoxyParams}{Parameters}
+{\em Attacker\+Folder} & Inputed data of the attackers \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+true Success reading attacker data 
+
+false Failure reading attacker data 
+\end{DoxyReturn}
+\mbox{\Hypertarget{classCgameMap_ad4b2d04471e9c263e3c8b5d0a1b0fb9e}\label{classCgameMap_ad4b2d04471e9c263e3c8b5d0a1b0fb9e}} 
+\index{CgameMap@{CgameMap}!readMap@{readMap}}
+\index{readMap@{readMap}!CgameMap@{CgameMap}}
+\doxysubsubsection{\texorpdfstring{readMap()}{readMap()}}
+{\footnotesize\ttfamily bool Cgame\+Map\+::read\+Map (\begin{DoxyParamCaption}\item[{list$<$ string $>$ \&}]{map }\end{DoxyParamCaption})}
+
+
+
+Function for reading ASCII and data of a map. 
+
+Function reads inputed data and checks whether it is correct or not. It checks the ASCII art of the map and checks for entrances, exits and invalid characters. After it finishes reading the data, function further checks calls check access, checks whether the sequence of entrances is correct and that there is only one exit. Finaly the function inputs pointers to all empty spaces into c\+\_\+empty\+\_\+spaces
+
+
+\begin{DoxyParams}{Parameters}
+{\em map} & Data containing data of the map and ASCII definining the map \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+true Success reading map data 
+
+false Failure reading attacker data 
+\end{DoxyReturn}
+\mbox{\Hypertarget{classCgameMap_a5793ba5b522bea14dc935aa0fd830df4}\label{classCgameMap_a5793ba5b522bea14dc935aa0fd830df4}} 
+\index{CgameMap@{CgameMap}!readTowers@{readTowers}}
+\index{readTowers@{readTowers}!CgameMap@{CgameMap}}
+\doxysubsubsection{\texorpdfstring{readTowers()}{readTowers()}}
+{\footnotesize\ttfamily bool Cgame\+Map\+::read\+Towers (\begin{DoxyParamCaption}\item[{list$<$ string $>$ \&}]{tower\+Folder }\end{DoxyParamCaption})}
+
+
+
+Function reads inputed tower data. 
+
+Function reads tower data and creates template tower tiles based off from the given data The function also creates specific tower types based off the given type Function while reading checks whether input contains only data needed for creation of a tower. Each tower is initialized with line containing \char`\"{}\+TOWER\+:\char`\"{}
+
+
+\begin{DoxyParams}{Parameters}
+{\em towers} & Inputed data of the towers \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+true Success reading tower data 
+
+false Failure reading tower data 
+\end{DoxyReturn}
+\mbox{\Hypertarget{classCgameMap_a77403972d6961f21a84b92c8344b3525}\label{classCgameMap_a77403972d6961f21a84b92c8344b3525}} 
+\index{CgameMap@{CgameMap}!saveData@{saveData}}
+\index{saveData@{saveData}!CgameMap@{CgameMap}}
+\doxysubsubsection{\texorpdfstring{saveData()}{saveData()}}
+{\footnotesize\ttfamily list$<$string$>$ Cgame\+Map\+::save\+Data (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Function for saving all of the active game\textquotesingle{}s data into a list of strings. 
+
+Function takes all of the game\textquotesingle{}s towers, attackers, it\textquotesingle{}s map, status and active units and inputs in a format that can be read by other functions into a list of strings
+
+\begin{DoxyReturn}{Returns}
+list$<$string$>$ Active game\textquotesingle{}s data 
+\end{DoxyReturn}
+
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+src/game\+Map.\+hpp\end{DoxyCompactItemize}

@@ -1,0 +1,384 @@
+TOWER:
+NAME: StrawWall
+SYMBOL: W
+HEALTH: 30
+DAMAGE: 1
+COOLDOWN: 2
+TIMER: 1
+TYPE: BLOCK
+DISTANCE: 0
+RESISTANCE: fire
+ 
+END_OF_TOWERS
+ 
+UNIT:
+NAME: Mantis
+SYMBOL: Z
+HEALTH: 10
+DAMAGE: 10
+COST: 2
+SPEED: 2
+RESISTANCE: fire
+RESISTANCE: ice
+DAMAGE_TYPE: water
+ 
+END_OF_UNITS
+STATUS:
+HEALTH: 50
+MAX_ROUNDS: 200
+MONEY: 342
+INCOME: 10
+                                                  
+################################################# 
+#                        #           #         <=3
+#         #              #           ###        # 
+#         #              #     #       #        # 
+<=        #                    #       #       <=1
+#         #                    #                # 
+#                              #                # 
+#                              #               <=2
+################################################# 
+                                                  
+                                                  
+                                                  
+END_OF_MAP
+ROUND: 35
+SCORE: 0
+ACTIVE_TOWER:
+NAME: StrawWall
+SYMBOL: W
+HEALTH: 30
+DAMAGE: 1
+COOLDOWN: 2
+TIMER: 0
+TYPE: BLOCK
+DISTANCE: 3
+RESISTANCE: fire
+X: 10
+Y: 2
+ 
+ACTIVE_TOWER:
+NAME: StrawWall
+SYMBOL: W
+HEALTH: 30
+DAMAGE: 1
+COOLDOWN: 2
+TIMER: 0
+TYPE: BLOCK
+DISTANCE: 3
+RESISTANCE: fire
+X: 31
+Y: 3
+ 
+ACTIVE_TOWER:
+NAME: StrawWall
+SYMBOL: W
+HEALTH: 30
+DAMAGE: 1
+COOLDOWN: 2
+TIMER: 0
+TYPE: BLOCK
+DISTANCE: 3
+RESISTANCE: fire
+X: 10
+Y: 7
+ 
+ACTIVE_TOWER:
+NAME: StrawWall
+SYMBOL: W
+HEALTH: 30
+DAMAGE: 1
+COOLDOWN: 2
+TIMER: 0
+TYPE: BLOCK
+DISTANCE: 3
+RESISTANCE: fire
+X: 39
+Y: 2
+ 
+ACTIVE_TOWER:
+NAME: StrawWall
+SYMBOL: W
+HEALTH: 30
+DAMAGE: 1
+COOLDOWN: 2
+TIMER: 0
+TYPE: BLOCK
+DISTANCE: 3
+RESISTANCE: fire
+X: 47
+Y: 3
+ 
+ACTIVE_TOWER:
+NAME: StrawWall
+SYMBOL: W
+HEALTH: 30
+DAMAGE: 1
+COOLDOWN: 2
+TIMER: 0
+TYPE: BLOCK
+DISTANCE: 3
+RESISTANCE: fire
+X: 47
+Y: 7
+ 
+ACTIVE_TOWER:
+NAME: StrawWall
+SYMBOL: W
+HEALTH: 30
+DAMAGE: 1
+COOLDOWN: 2
+TIMER: 0
+TYPE: BLOCK
+DISTANCE: 3
+RESISTANCE: fire
+X: 39
+Y: 6
+ 
+ACTIVE_TOWER:
+NAME: StrawWall
+SYMBOL: W
+HEALTH: 30
+DAMAGE: 1
+COOLDOWN: 2
+TIMER: 0
+TYPE: BLOCK
+DISTANCE: 3
+RESISTANCE: fire
+X: 37
+Y: 4
+ 
+ACTIVE_TOWER:
+NAME: StrawWall
+SYMBOL: W
+HEALTH: 30
+DAMAGE: 1
+COOLDOWN: 2
+TIMER: 0
+TYPE: BLOCK
+DISTANCE: 3
+RESISTANCE: fire
+X: 25
+Y: 5
+ 
+ACTIVE_TOWER:
+NAME: StrawWall
+SYMBOL: W
+HEALTH: 30
+DAMAGE: 1
+COOLDOWN: 2
+TIMER: 0
+TYPE: BLOCK
+DISTANCE: 3
+RESISTANCE: fire
+X: 45
+Y: 5
+ 
+ACTIVE_TOWER:
+NAME: StrawWall
+SYMBOL: W
+HEALTH: 30
+DAMAGE: 1
+COOLDOWN: 2
+TIMER: 0
+TYPE: BLOCK
+DISTANCE: 3
+RESISTANCE: fire
+X: 25
+Y: 6
+ 
+ACTIVE_TOWER:
+NAME: StrawWall
+SYMBOL: W
+HEALTH: 30
+DAMAGE: 1
+COOLDOWN: 2
+TIMER: 0
+TYPE: BLOCK
+DISTANCE: 3
+RESISTANCE: fire
+X: 28
+Y: 4
+ 
+ACTIVE_TOWER:
+NAME: StrawWall
+SYMBOL: W
+HEALTH: 30
+DAMAGE: 1
+COOLDOWN: 2
+TIMER: 0
+TYPE: BLOCK
+DISTANCE: 3
+RESISTANCE: fire
+X: 34
+Y: 4
+ 
+ACTIVE_TOWER:
+NAME: StrawWall
+SYMBOL: W
+HEALTH: 30
+DAMAGE: 1
+COOLDOWN: 2
+TIMER: 0
+TYPE: BLOCK
+DISTANCE: 3
+RESISTANCE: fire
+X: 4
+Y: 5
+ 
+ACTIVE_TOWER:
+NAME: StrawWall
+SYMBOL: W
+HEALTH: 30
+DAMAGE: 1
+COOLDOWN: 2
+TIMER: 0
+TYPE: BLOCK
+DISTANCE: 3
+RESISTANCE: fire
+X: 5
+Y: 5
+ 
+ACTIVE_TOWER:
+NAME: StrawWall
+SYMBOL: W
+HEALTH: 30
+DAMAGE: 1
+COOLDOWN: 2
+TIMER: 0
+TYPE: BLOCK
+DISTANCE: 3
+RESISTANCE: fire
+X: 6
+Y: 5
+ 
+ACTIVE_TOWER:
+NAME: StrawWall
+SYMBOL: W
+HEALTH: 30
+DAMAGE: 1
+COOLDOWN: 2
+TIMER: 0
+TYPE: BLOCK
+DISTANCE: 3
+RESISTANCE: fire
+X: 7
+Y: 5
+ 
+ACTIVE_UNIT:
+NAME: Mantis
+SYMBOL: Z
+HEALTH: 10
+DAMAGE: 10
+COST: 2
+SPEED: 2
+RESISTANCE: fire
+RESISTANCE: ice
+DAMAGE_TYPE: water
+X: 1
+Y: 5
+ 
+ACTIVE_UNIT:
+NAME: Mantis
+SYMBOL: Z
+HEALTH: 10
+DAMAGE: 10
+COST: 2
+SPEED: 2
+RESISTANCE: fire
+RESISTANCE: ice
+DAMAGE_TYPE: water
+X: 2
+Y: 5
+ 
+ACTIVE_UNIT:
+NAME: Mantis
+SYMBOL: Z
+HEALTH: 10
+DAMAGE: 10
+COST: 2
+SPEED: 2
+RESISTANCE: fire
+RESISTANCE: ice
+DAMAGE_TYPE: water
+X: 3
+Y: 6
+ 
+ACTIVE_UNIT:
+NAME: Mantis
+SYMBOL: Z
+HEALTH: 10
+DAMAGE: 10
+COST: 2
+SPEED: 2
+RESISTANCE: fire
+RESISTANCE: ice
+DAMAGE_TYPE: water
+X: 4
+Y: 6
+ 
+ACTIVE_UNIT:
+NAME: Mantis
+SYMBOL: Z
+HEALTH: 10
+DAMAGE: 10
+COST: 2
+SPEED: 2
+RESISTANCE: fire
+RESISTANCE: ice
+DAMAGE_TYPE: water
+X: 5
+Y: 6
+ 
+ACTIVE_UNIT:
+NAME: Mantis
+SYMBOL: Z
+HEALTH: 10
+DAMAGE: 10
+COST: 2
+SPEED: 2
+RESISTANCE: fire
+RESISTANCE: ice
+DAMAGE_TYPE: water
+X: 3
+Y: 5
+ 
+ACTIVE_UNIT:
+NAME: Mantis
+SYMBOL: Z
+HEALTH: 10
+DAMAGE: 10
+COST: 2
+SPEED: 2
+RESISTANCE: fire
+RESISTANCE: ice
+DAMAGE_TYPE: water
+X: 5
+Y: 7
+ 
+ACTIVE_UNIT:
+NAME: Mantis
+SYMBOL: Z
+HEALTH: 10
+DAMAGE: 10
+COST: 2
+SPEED: 2
+RESISTANCE: fire
+RESISTANCE: ice
+DAMAGE_TYPE: water
+X: 6
+Y: 7
+ 
+ACTIVE_UNIT:
+NAME: Mantis
+SYMBOL: Z
+HEALTH: 10
+DAMAGE: 10
+COST: 2
+SPEED: 2
+RESISTANCE: fire
+RESISTANCE: ice
+DAMAGE_TYPE: water
+X: 7
+Y: 8
+ 
